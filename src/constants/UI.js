@@ -1,0 +1,5 @@
+export const PRIMARY = "#070F2B"
+export const SECONDARY = "#1B1A55"
+export const TERTIARY = "#535C91"
+export const QUARTERNARY = "#9290C3"
+export const WHITE = "#FFFFFF"

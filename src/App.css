@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.slick-container {
+  height: 100vh; /* Or 100% if parent has defined height */
+  width: 100%;
+}
+
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide > div { /* Target the div directly inside slick-slide */
+  height: 100%;
+}
