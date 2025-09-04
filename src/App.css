@@ -48,3 +48,29 @@
 .slick-slide > div { /* Target the div directly inside slick-slide */
   height: 100%;
 }
+
+.slick-slider {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slick-list {
+  height: 100%;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-container {
+  height: 90vh;
+  width: 100%;
+}

@@ -9,12 +9,15 @@ import LocalOfferOutlinedIcon from "@mui/icons-material/LocalOfferOutlined";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import DateRangeOutlinedIcon from "@mui/icons-material/DateRangeOutlined";
 import FAQComponent from "../components/FAQ";
+import AboutUsComponent from "../components/AboutUs";
+import ContactUsComponent from "../components/ContactUs";
+import FooterComponent from "../components/Footer";
 
 function Home() {
   return (
     <>
       <NavBar />
-      {/* <CarouselComponent /> */}
+      <CarouselComponent />
       <Box
         sx={{
           display: "flex",
@@ -137,6 +140,9 @@ function Home() {
       <ChauffeurServices />
       <ReviewComponent />
       <FAQComponent />
+      <AboutUsComponent />
+      <ContactUsComponent />
+      <FooterComponent />
     </>
   );
 }
