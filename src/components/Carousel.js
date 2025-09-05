@@ -23,6 +23,24 @@ const CarouselComponent = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          dots: true,
+          arrows: false,
+          autoplaySpeed: 4000,
+        }
+      }
+    ]
   };
 
   const carouselItems = [
@@ -64,38 +82,72 @@ const CarouselComponent = () => {
               alignItems: 'center',    // Center items horizontally
               justifyContent: 'center'
             }}>
-              <CardContent sx={{ m: "auto" }}>
-                <Typography variant="h3" component="div" color="white" sx={{ m: 1 }}>
+              <CardContent sx={{ 
+                m: "auto", 
+                textAlign: "center",
+                px: { xs: 2, sm: 4, md: 6 },
+                py: { xs: 2, sm: 3, md: 4 }
+              }}>
+                <Typography 
+                  variant="h3" 
+                  component="div" 
+                  color="white" 
+                  sx={{ 
+                    m: 1,
+                    fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem" },
+                    fontWeight: "bold"
+                  }}
+                >
                   {item.title}
                 </Typography>
-                <Typography variant="body1" color="white" sx={{ m: 1 }}>
+                <Typography 
+                  variant="body1" 
+                  color="white" 
+                  sx={{ 
+                    m: 1,
+                    fontSize: { xs: "0.9rem", sm: "1rem", md: "1.1rem" },
+                    maxWidth: { xs: "90%", sm: "80%", md: "70%" },
+                    mx: "auto"
+                  }}
+                >
                   {item.description}
                 </Typography>
-                <Button
-                  variant="contained"
-                  size="large"
-                  sx={{
-                    m: 1,
-                    borderRadius: "20px",
-                    color: WHITE,
-                    backgroundColor: PRIMARY,
-                  }}
-                >
-                  {item.button1}
-                </Button>
-                <Button
-                  variant="outlined"
-                  size="large"
-                  sx={{
-                    m: 1,
-                    borderRadius: "20px",
-                    color: WHITE,
-                    borderColor: WHITE,
-                  }}
-                >
-                  {item.button2}
-                </Button>
-
+                <Box sx={{ 
+                  display: "flex", 
+                  flexDirection: { xs: "column", sm: "row" },
+                  justifyContent: "center",
+                  gap: 1,
+                  mt: 2
+                }}>
+                  <Button
+                    variant="contained"
+                    size="large"
+                    sx={{
+                      borderRadius: "20px",
+                      color: WHITE,
+                      backgroundColor: PRIMARY,
+                      fontSize: { xs: "0.8rem", sm: "0.9rem", md: "1rem" },
+                      px: { xs: 2, sm: 3, md: 4 },
+                      py: { xs: 1, sm: 1.5, md: 2 }
+                    }}
+                  >
+                    {item.button1}
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    size="large"
+                    sx={{
+                      borderRadius: "20px",
+                      color: WHITE,
+                      borderColor: WHITE,
+                      fontSize: { xs: "0.8rem", sm: "0.9rem", md: "1rem" },
+                      px: { xs: 2, sm: 3, md: 4 },
+                      py: { xs: 1, sm: 1.5, md: 2 }
+                    }}
+                  >
+                    {item.button2}
+                  </Button>
+                </Box>
               </CardContent>
             </Card>
           </Box>

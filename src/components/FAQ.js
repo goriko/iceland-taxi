@@ -9,21 +9,59 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function FAQComponent() {
   return (
-    <Box sx={{ m: 4 }}>
-      <Typography variant="h4">FREQUENTLY ASKED QUESTIONS (FAQS)</Typography>
-      <Box sx={{ m: 5, pl: 20, pr: 20 }}>
+    <Box sx={{ m: { xs: 2, md: 4 } }}>
+      <Typography 
+        variant="h4" 
+        sx={{ 
+          textAlign: "center",
+          fontSize: { xs: "1.2rem", sm: "1.5rem", md: "2rem" },
+          mb: 3
+        }}
+      >
+        FREQUENTLY ASKED QUESTIONS (FAQS)
+      </Typography>
+      <Box sx={{ 
+        m: { xs: 2, md: 5 }, 
+        pl: { xs: 2, md: 20 }, 
+        pr: { xs: 2, md: 20 }
+      }}>
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1-content"
             id="panel1-header"
-            sx={{ p: 1, pl: 3, pr: 3 }}
+            sx={{ p: { xs: 1, md: 1 }, pl: { xs: 2, md: 3 }, pr: { xs: 2, md: 3 } }}
           >
-            <Typography variant="h6">How can I book your private chauffeur service?</Typography>
+            <Typography 
+              variant="h6" 
+              sx={{ 
+                fontSize: { xs: "1rem", md: "1.25rem" }
+              }}
+            >
+              How can I book your private chauffeur service?
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• You can book our private chauffeur service by reaching out to us via WhatsApp or by submitting your planned itinerary through email.</Typography>
-            <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• To confirm your reservation and secure your preferred date, a 10% deposit is required, which can be conveniently paid through a secure payment link.</Typography>
+            <Typography 
+              variant="body1" 
+              sx={{ 
+                textAlign: "left", 
+                m: 1,
+                fontSize: { xs: "0.9rem", md: "1rem" }
+              }}
+            >
+              • You can book our private chauffeur service by reaching out to us via WhatsApp or by submitting your planned itinerary through email.
+            </Typography>
+            <Typography 
+              variant="body1" 
+              sx={{ 
+                textAlign: "left", 
+                m: 1,
+                fontSize: { xs: "0.9rem", md: "1rem" }
+              }}
+            >
+              • To confirm your reservation and secure your preferred date, a 10% deposit is required, which can be conveniently paid through a secure payment link.
+            </Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion>

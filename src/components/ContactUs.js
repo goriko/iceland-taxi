@@ -9,9 +9,23 @@ import { PRIMARY, WHITE } from "../constants/UI";
 
 function ContactUsComponent() {
   return (
-    <Box sx={{ p: 4, backgroundColor: PRIMARY }}>
-      <Typography variant="h4" sx={{ color: WHITE }}>CONTACT US</Typography>
-      <Box sx={{ m: 5, pl: 20, pr: 20 }}>
+    <Box sx={{ p: { xs: 2, md: 4 }, backgroundColor: PRIMARY }}>
+      <Typography 
+        variant="h4" 
+        sx={{ 
+          color: WHITE,
+          textAlign: "center",
+          fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" },
+          mb: 3
+        }}
+      >
+        CONTACT US
+      </Typography>
+      <Box sx={{ 
+        m: { xs: 2, md: 5 }, 
+        pl: { xs: 2, md: 20 }, 
+        pr: { xs: 2, md: 20 }
+      }}>
         <TextField
           label="Full Name"
           variant="outlined"

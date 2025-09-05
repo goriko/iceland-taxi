@@ -74,3 +74,35 @@
   height: 90vh;
   width: 100%;
 }
+
+/* Mobile responsive carousel */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .slick-container {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .slick-slider,
+  .slick-list,
+  .slick-track,
+  .slick-slide > div {
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    height: 50vh;
+    min-height: 350px;
+  }
+  
+  .slick-container {
+    height: 50vh;
+    min-height: 350px;
+  }
+}
