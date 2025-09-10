@@ -2,17 +2,18 @@ import * as React from "react";
 import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
 import { PRIMARY } from "../constants/UI";
-import { 
-  Button, 
-  AppBar, 
-  Box, 
-  Toolbar, 
-  Container, 
-  IconButton, 
-  Menu, 
-  MenuItem, 
-  Typography 
+import {
+  Button,
+  AppBar,
+  Box,
+  Toolbar,
+  Container,
+  IconButton,
+  Menu,
+  MenuItem,
+  Typography
 } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const { useState } = React;
 const pages = [
@@ -24,6 +25,17 @@ const pages = [
   "About",
   "Contact",
 ];
+
+const pageLinks = {
+  Home: "/",
+  "Airport Transfer": "/airport-transfer",
+  Tours: "/tours",
+  Reviews: "/reviews",
+  FAQS: "/faqs",
+  About: "/about",
+  Contact: "/contact",
+};
+
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -91,7 +103,12 @@ function NavBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem
+                  key={page}
+                  component={Link}
+                  to={pageLinks[page]}
+                  onClick={handleCloseNavMenu}
+                >
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -121,15 +138,17 @@ function NavBar() {
 
           {/* Desktop Menu */}
           <Box
-            sx={{ 
-              flexGrow: 1, 
+            sx={{
+              flexGrow: 1,
               display: { xs: "none", md: "flex" },
-              justifyContent: "flex-end"
+              justifyContent: "flex-end",
             }}
           >
             {pages.map((page) => (
               <Button
                 key={page}
+                component={Link}
+                to={pageLinks[page]}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block", mx: 1 }}
               >

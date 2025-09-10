@@ -12,9 +12,10 @@ import "../App.css"
 // Import slick-carousel styles
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { useNavigate } from "react-router-dom";
 // Carousel component
 const CarouselComponent = () => {
+  const navigate = useNavigate();
   const settings = {
     dots: true,
     infinite: true,
@@ -82,17 +83,17 @@ const CarouselComponent = () => {
               alignItems: 'center',    // Center items horizontally
               justifyContent: 'center'
             }}>
-              <CardContent sx={{ 
-                m: "auto", 
+              <CardContent sx={{
+                m: "auto",
                 textAlign: "center",
                 px: { xs: 2, sm: 4, md: 6 },
                 py: { xs: 2, sm: 3, md: 4 }
               }}>
-                <Typography 
-                  variant="h3" 
-                  component="div" 
-                  color="white" 
-                  sx={{ 
+                <Typography
+                  variant="h3"
+                  component="div"
+                  color="white"
+                  sx={{
                     m: 1,
                     fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem" },
                     fontWeight: "bold"
@@ -100,10 +101,10 @@ const CarouselComponent = () => {
                 >
                   {item.title}
                 </Typography>
-                <Typography 
-                  variant="body1" 
-                  color="white" 
-                  sx={{ 
+                <Typography
+                  variant="body1"
+                  color="white"
+                  sx={{
                     m: 1,
                     fontSize: { xs: "0.9rem", sm: "1rem", md: "1.1rem" },
                     maxWidth: { xs: "90%", sm: "80%", md: "70%" },
@@ -112,8 +113,8 @@ const CarouselComponent = () => {
                 >
                   {item.description}
                 </Typography>
-                <Box sx={{ 
-                  display: "flex", 
+                <Box sx={{
+                  display: "flex",
                   flexDirection: { xs: "column", sm: "row" },
                   justifyContent: "center",
                   gap: 1,
@@ -143,6 +144,11 @@ const CarouselComponent = () => {
                       fontSize: { xs: "0.8rem", sm: "0.9rem", md: "1rem" },
                       px: { xs: 2, sm: 3, md: 4 },
                       py: { xs: 1, sm: 1.5, md: 2 }
+                    }}
+                    onClick={() => {
+                      if (item.title === "AIRPORT TRANSFER") {
+                        navigate("/airport-transfer");
+                      }
                     }}
                   >
                     {item.button2}
