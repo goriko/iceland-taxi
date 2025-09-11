@@ -31,16 +31,16 @@ function Home() {
           mx: { xs: 0, md: "auto" }
         }}
       >
-        <Box sx={{ 
-          flex: { xs: 1, md: 3 }, 
+        <Box sx={{
+          flex: { xs: 1, md: 3 },
           alignContent: "center",
           order: { xs: 2, md: 1 }
         }}>
           <Typography
             variant="h2"
-            sx={{ 
-              color: "#FFFFFF", 
-              m: { xs: 2, md: 5 }, 
+            sx={{
+              color: "#FFFFFF",
+              m: { xs: 2, md: 5 },
               textAlign: { xs: "center", md: "left" },
               fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem" }
             }}
@@ -49,9 +49,9 @@ function Home() {
           </Typography>
           <Typography
             variant="h6"
-            sx={{ 
-              color: "#FFFFFF", 
-              m: { xs: 2, md: 5 }, 
+            sx={{
+              color: "#FFFFFF",
+              m: { xs: 2, md: 5 },
               textAlign: { xs: "center", md: "left" },
               fontSize: { xs: "1rem", sm: "1.1rem", md: "1.25rem" }
             }}
@@ -100,21 +100,21 @@ function Home() {
             </Button>
           </Box>
         </Box>
-        <Box sx={{ 
+        <Box sx={{
           flex: { xs: 1, md: 2 },
           order: { xs: 1, md: 2 },
           display: "flex",
           justifyContent: "center",
           alignItems: "center"
         }}>
-          <img 
-            src={carImage} 
-            alt="car" 
-            style={{ 
-              maxWidth: "100%", 
+          <img
+            src={carImage}
+            alt="car"
+            style={{
+              maxWidth: "100%",
               height: "auto",
               maxHeight: { xs: "200px", md: "400px" }
-            }} 
+            }}
           />
         </Box>
       </Box>
@@ -130,11 +130,11 @@ function Home() {
           mx: { xs: 0, md: "auto" }
         }}
       >
-        <Card sx={{ 
-          flex: 1, 
-          m: { xs: 1, md: 2 }, 
-          borderRadius: "30px", 
-          backgroundColor: "#0057AD0F" 
+        <Card sx={{
+          flex: 1,
+          m: { xs: 1, md: 2 },
+          borderRadius: "30px",
+          backgroundColor: "#0057AD0F"
         }}>
           <CardContent sx={{ textAlign: "center", p: { xs: 2, md: 3 } }}>
             <LocalOfferOutlinedIcon sx={{ fontSize: { xs: 60, md: 80 } }} />
@@ -150,11 +150,11 @@ function Home() {
             </Typography>
           </CardContent>
         </Card>
-        <Card sx={{ 
-          flex: 1, 
-          m: { xs: 1, md: 2 }, 
-          borderRadius: "30px", 
-          backgroundColor: "#0057AD0F" 
+        <Card sx={{
+          flex: 1,
+          m: { xs: 1, md: 2 },
+          borderRadius: "30px",
+          backgroundColor: "#0057AD0F"
         }}>
           <CardContent sx={{ textAlign: "center", p: { xs: 2, md: 3 } }}>
             <DescriptionOutlinedIcon sx={{ fontSize: { xs: 60, md: 80 } }} />
@@ -172,11 +172,11 @@ function Home() {
             </Typography>
           </CardContent>
         </Card>
-        <Card sx={{ 
-          flex: 1, 
-          m: { xs: 1, md: 2 }, 
-          borderRadius: "30px", 
-          backgroundColor: "#0057AD0F" 
+        <Card sx={{
+          flex: 1,
+          m: { xs: 1, md: 2 },
+          borderRadius: "30px",
+          backgroundColor: "#0057AD0F"
         }}>
           <CardContent sx={{ textAlign: "center", p: { xs: 2, md: 3 } }}>
             <DateRangeOutlinedIcon sx={{ fontSize: { xs: 60, md: 80 } }} />
@@ -194,11 +194,22 @@ function Home() {
           </CardContent>
         </Card>
       </Box>
-      <ChauffeurServices />
-      <ReviewComponent />
-      <FAQComponent />
-      <AboutUsComponent />
-      <ContactUsComponent />
+      <Box id="chauffeur-services">
+        <ChauffeurServices />
+      </Box>
+      <Box id="reviews">
+        <ReviewComponent />
+      </Box>
+      <Box id="faqs">
+        <FAQComponent />
+      </Box>
+      <Box id="about-us">
+        <AboutUsComponent />
+      </Box>
+      <Box id="contact-us">
+        <ContactUsComponent />
+      </Box>
+
       <FooterComponent />
     </>
   );

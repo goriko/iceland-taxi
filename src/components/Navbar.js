@@ -13,7 +13,7 @@ import {
   MenuItem,
   Typography
 } from "@mui/material";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const { useState } = React;
 const pages = [
@@ -29,11 +29,11 @@ const pages = [
 const pageLinks = {
   Home: "/",
   "Airport Transfer": "/airport-transfer",
-  Tours: "/tours",
-  Reviews: "/reviews",
-  FAQS: "/faqs",
-  About: "/about",
-  Contact: "/contact",
+  Tours: "/#chauffeur-services",
+  Reviews: "/#reviews",
+  FAQS: "/#faqs",
+  About: "/#about-us",
+  Contact: "/#contact-us",
 };
 
 
@@ -105,7 +105,8 @@ function NavBar() {
               {pages.map((page) => (
                 <MenuItem
                   key={page}
-                  component={Link}
+                  component={HashLink}
+                  smooth
                   to={pageLinks[page]}
                   onClick={handleCloseNavMenu}
                 >
@@ -147,7 +148,8 @@ function NavBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                component={Link}
+                component={HashLink}
+                smooth
                 to={pageLinks[page]}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block", mx: 1 }}
