@@ -27,7 +27,7 @@ const pages = [
 ];
 
 const pageLinks = {
-  Home: "/",
+  Home: "/#home",
   "Airport Transfer": "/airport-transfer",
   Tours: "/#chauffeur-services",
   Reviews: "/#reviews",
@@ -49,11 +49,16 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: PRIMARY }}>
+    <AppBar position="sticky" sx={{ backgroundColor: PRIMARY }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Desktop Logo */}
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <Box
+            component="img"
+            src="/IWLogo.png"
+            alt="Ride Iceland Logo"
+            sx={{ display: { xs: "none", md: "flex" }, mr: 1, width: 30, height: 30 }}
+          />
           <Typography
             variant="h6"
             noWrap
@@ -117,7 +122,12 @@ function NavBar() {
           </Box>
 
           {/* Mobile Logo */}
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <Box
+            component="img"
+            src="/IWLogo.png"
+            alt="Ride Iceland Logo"
+            sx={{ display: { xs: "flex", md: "none" }, mr: 1, width: 28, height: 28 }}
+          />
           <Typography
             variant="h5"
             noWrap

@@ -17,7 +17,9 @@ function Home() {
   return (
     <>
       <NavBar />
-      <CarouselComponent />
+      <Box id="home">
+        <CarouselComponent />
+      </Box>
       <Box
         sx={{
           display: "flex",
