@@ -13,7 +13,7 @@ import {
   MenuItem,
   Typography
 } from "@mui/material";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const { useState } = React;
 const pages = [
@@ -27,13 +27,13 @@ const pages = [
 ];
 
 const pageLinks = {
-  Home: "/",
+  Home: "/#home",
   "Airport Transfer": "/airport-transfer",
-  Tours: "/tours",
-  Reviews: "/reviews",
-  FAQS: "/faqs",
-  About: "/about",
-  Contact: "/contact",
+  Tours: "/#chauffeur-services",
+  Reviews: "/#reviews",
+  FAQS: "/#faqs",
+  About: "/#about-us",
+  Contact: "/#contact-us",
 };
 
 
@@ -49,11 +49,16 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: PRIMARY }}>
+    <AppBar position="sticky" sx={{ backgroundColor: PRIMARY }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Desktop Logo */}
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <Box
+            component="img"
+            src="/IWLogo.png"
+            alt="Ride Iceland Logo"
+            sx={{ display: { xs: "none", md: "flex" }, mr: 1, width: 30, height: 30 }}
+          />
           <Typography
             variant="h6"
             noWrap
@@ -105,7 +110,8 @@ function NavBar() {
               {pages.map((page) => (
                 <MenuItem
                   key={page}
-                  component={Link}
+                  component={HashLink}
+                  smooth
                   to={pageLinks[page]}
                   onClick={handleCloseNavMenu}
                 >
@@ -116,7 +122,12 @@ function NavBar() {
           </Box>
 
           {/* Mobile Logo */}
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <Box
+            component="img"
+            src="/IWLogo.png"
+            alt="Ride Iceland Logo"
+            sx={{ display: { xs: "flex", md: "none" }, mr: 1, width: 28, height: 28 }}
+          />
           <Typography
             variant="h5"
             noWrap
@@ -147,7 +158,8 @@ function NavBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                component={Link}
+                component={HashLink}
+                smooth
                 to={pageLinks[page]}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block", mx: 1 }}
