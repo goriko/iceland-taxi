@@ -25,9 +25,9 @@ function AboutUsComponent() {
 
   return (
     <Box sx={{ m: { xs: 2, md: 4 } }}>
-      <Typography 
-        variant="h4" 
-        sx={{ 
+      <Typography
+        variant="h4"
+        sx={{
           textAlign: "center",
           fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" },
           mb: 3
@@ -35,47 +35,47 @@ function AboutUsComponent() {
       >
         ABOUT US
       </Typography>
-      <Box sx={{ 
-        m: { xs: 2, md: 5 }, 
-        pl: { xs: 2, md: 20 }, 
+      <Box sx={{
+        m: { xs: 2, md: 5 },
+        pl: { xs: 2, md: 20 },
         pr: { xs: 2, md: 20 },
         textAlign: { xs: "center", md: "left" }
       }}>
-        <Typography 
-          variant="body1" 
-          sx={{ 
-            m: { xs: 1, md: 2 }, 
+        <Typography
+          variant="body1"
+          sx={{
+            m: { xs: 1, md: 2 },
             fontSize: { xs: "0.9rem", md: "1rem" }
           }}
         >
-          At Ride Iceland, we are more than a private transportation service, We are your dedicated partner in discovering the beauty, culture, and wonder of Iceland.
+          With Iceland Grand Tours, you’re not just booking a ride — you’re setting off on a journey to uncover Iceland’s raw beauty, rich culture, and unforgettable wonders.
         </Typography>
-        <Typography 
-          variant="body1" 
-          sx={{ 
-            m: { xs: 1, md: 2 }, 
+        <Typography
+          variant="body1"
+          sx={{
+            m: { xs: 1, md: 2 },
             fontSize: { xs: "0.9rem", md: "1rem" }
           }}
         >
-          Born from a deep appreciation for Iceland's stunning landscapes and rich heritage, Ride Iceland was founded with a simple mission: to provide every traveler with a seamless, memorable, and truly personalized Icelandic experience.
+          Inspired by Iceland’s breathtaking landscapes and vibrant heritage, Iceland Grand Tours was created with one clear mission: to deliver every traveler a smooth, unforgettable, and uniquely tailored Icelandic journey.
         </Typography>
-        <Typography 
-          variant="body1" 
-          sx={{ 
-            m: { xs: 1, md: 2 }, 
+        <Typography
+          variant="body1"
+          sx={{
+            m: { xs: 1, md: 2 },
             fontSize: { xs: "0.9rem", md: "1rem" }
           }}
         >
-          We combine dependable private transfers with thoughtfully curated tours, all led by professional chauffeurs and licensed guides who bring years of local expertise and passion to every journey. Whether you're navigating the Golden Circle, soaking in geothermal lagoons, or uncovering hidden gems off the beaten path, our team is committed to delivering a journey that's as inspiring as the destination itself.
+          We blend reliable private transfers with carefully crafted tours, guided by professional chauffeurs and licensed experts who share a deep passion and years of local knowledge. From exploring the Golden Circle and relaxing in geothermal lagoons to discovering hidden treasures beyond the usual routes, our team is dedicated to making every journey as inspiring as the destination.
         </Typography>
-        <Typography 
-          variant="body1" 
-          sx={{ 
-            m: { xs: 1, md: 2 }, 
+        <Typography
+          variant="body1"
+          sx={{
+            m: { xs: 1, md: 2 },
             fontSize: { xs: "0.9rem", md: "1rem" }
           }}
         >
-          Let us help you create unforgettable moments in Iceland — comfortably, safely, and with true local insight.
+          Allow us to craft unforgettable Icelandic experiences — with elegance, comfort, and authentic local expertise.
         </Typography>
       </Box>
 
@@ -85,8 +85,8 @@ function AboutUsComponent() {
           borderRadius: 2,
           overflow: "hidden",
           border: "1px solid #ccc",
-          m: { xs: 2, md: 5 }, 
-          ml: { xs: 2, md: 25 }, 
+          m: { xs: 2, md: 5 },
+          ml: { xs: 2, md: 25 },
           mr: { xs: 2, md: 25 }
         }}
       >

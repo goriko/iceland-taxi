@@ -31,40 +31,40 @@ function FooterComponent() {
       >
         <Box sx={{ flex: 1, textAlign: { xs: "center", md: "left" } }}>
           <Box sx={{ m: { xs: 2, md: 3 } }}>
-            <Typography 
-              variant="h6" 
-              sx={{ 
-                color: WHITE, 
+            <Typography
+              variant="h6"
+              sx={{
+                color: WHITE,
                 textAlign: { xs: "center", md: "left" },
                 fontSize: { xs: "1rem", md: "1.25rem" }
               }}
             >
               Address
             </Typography>
-            <Typography 
-              variant="body1" 
-              sx={{ 
-                color: WHITE, 
+            <Typography
+              variant="body1"
+              sx={{
+                color: WHITE,
                 textAlign: { xs: "center", md: "left" },
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
             >
-              Ride Iceland ehf.
+              Iceland Grand Tours ehf.
             </Typography>
-            <Typography 
-              variant="body1" 
-              sx={{ 
-                color: WHITE, 
+            <Typography
+              variant="body1"
+              sx={{
+                color: WHITE,
                 textAlign: { xs: "center", md: "left" },
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
             >
               225 Garðabær, Iceland
             </Typography>
-            <Typography 
-              variant="body1" 
-              sx={{ 
-                color: WHITE, 
+            <Typography
+              variant="body1"
+              sx={{
+                color: WHITE,
                 textAlign: { xs: "center", md: "left" },
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
@@ -73,40 +73,40 @@ function FooterComponent() {
             </Typography>
           </Box>
           <Box sx={{ m: { xs: 2, md: 3 } }}>
-            <Typography 
-              variant="h6" 
-              sx={{ 
-                color: WHITE, 
+            <Typography
+              variant="h6"
+              sx={{
+                color: WHITE,
                 textAlign: { xs: "center", md: "left" },
                 fontSize: { xs: "1rem", md: "1.25rem" }
               }}
             >
               Contact
             </Typography>
-            <Typography 
-              variant="body1" 
-              sx={{ 
-                color: WHITE, 
+            <Typography
+              variant="body1"
+              sx={{
+                color: WHITE,
                 textAlign: { xs: "center", md: "left" },
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
             >
               +354 888 3191
             </Typography>
-            <Typography 
-              variant="body1" 
-              sx={{ 
-                color: WHITE, 
+            <Typography
+              variant="body1"
+              sx={{
+                color: WHITE,
                 textAlign: { xs: "center", md: "left" },
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
             >
-              info@rideiceland.is
+              icelandgrandtours@gmail.com
             </Typography>
-            <Typography 
-              variant="body1" 
-              sx={{ 
-                color: WHITE, 
+            <Typography
+              variant="body1"
+              sx={{
+                color: WHITE,
                 textAlign: { xs: "center", md: "left" },
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
@@ -116,10 +116,10 @@ function FooterComponent() {
           </Box>
         </Box>
         <Box sx={{ flex: 1, textAlign: "center" }}>
-          <Stack 
-            direction="row" 
-            spacing={2} 
-            sx={{ 
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{
               justifyContent: "center",
               mb: 2
             }}
@@ -160,14 +160,14 @@ function FooterComponent() {
               </IconButton>
             </Tooltip>
           </Stack>
-          <Typography 
-            variant="h6" 
-            sx={{ 
-              color: WHITE, 
+          <Typography
+            variant="h6"
+            sx={{
+              color: WHITE,
               fontSize: { xs: "0.9rem", md: "1rem" }
             }}
           >
-            Ride Iceland ehf. © 2024
+            Iceland Grand Tours © GGN2025
           </Typography>
         </Box>
       </Box>

@@ -51,51 +51,36 @@ const AirportTransfer = () => {
           Airport Transportation
         </Typography>
         <Typography variant="body1" paragraph>
-          Landing in Iceland? Take the stress out of your arrival with a reliable
-          Keflavík Airport transfer service. We offer a convenient and comfortable
-          way to get from the airport directly to your Reykjavik accommodation,
-          ensuring a smooth and relaxing start to your Icelandic adventure.
+          Arriving in Iceland? Begin your journey stress-free with our dependable Keflavík Airport transfer. Enjoy a seamless ride from the airport straight to your Reykjavik accommodation, offering comfort, convenience, and a relaxing start to your Icelandic adventure.
         </Typography>
 
         <Typography variant="h6" gutterBottom fontWeight="bold">
-          Choose Your Perfect Transfer Option:
+          Choose the Ideal Transfer for Your Journey:
         </Typography>
         <Typography variant="body1" paragraph>
-          <strong>Shared Shuttles:</strong> Our budget-friendly shared shuttles are a
-          great option for solo travelers or small groups. You’ll share the ride with
-          other passengers heading to the Reykjavik city center, with stops at major
-          hotels and guesthouses along the way.
+          <strong>Shared Shuttles:</strong> A cost-effective choice for solo travelers or small groups. Ride with fellow passengers headed to Reykjavik’s city center, with convenient stops at major hotels and guesthouses along the route.
         </Typography>
         <Typography variant="body1" paragraph>
-          <strong>Private Transfers:</strong> For a more personalized experience,
-          choose a private transfer. Your dedicated driver will meet you upon arrival
-          at the airport, whisk you away in a comfortable vehicle, and deliver you
-          directly to your hotel doorstep.
+          <strong>Private Transfers:</strong> For a tailored experience, opt for a private transfer. Your personal driver will greet you at the airport and provide a comfortable, direct ride straight to your hotel doorstep.
         </Typography>
 
         <Typography variant="h6" gutterBottom fontWeight="bold">
           Why Choose Us for Your Keflavík Airport Transfer:
         </Typography>
         <Typography variant="body1" paragraph>
-          ✅ Reliable Service: We guarantee on-time arrivals and departures, ensuring
-          you reach your destination without delay.
+          ✅ Reliable Service: Count on punctual pick-ups and drop-offs, ensuring you arrive at your destination right on time.
         </Typography>
         <Typography variant="body1" paragraph>
-          ✅ 24/7 Availability: No matter what time your flight arrives, we’ll be
-          there to greet you.
+          ✅ 24/7 Availability: Whatever hour your flight lands, our team will be ready to welcome you.
         </Typography>
         <Typography variant="body1" paragraph>
-          ✅ Experienced Drivers: Our professional drivers are knowledgeable about the
-          area and will ensure a safe and comfortable journey.
+          ✅ Experienced Drivers: Travel with confidence — our skilled drivers know the region well and provide a safe, comfortable ride.
         </Typography>
         <Typography variant="body1" paragraph>
-          ✅ Competitive Rates: We offer affordable prices for both shared and private
-          transfers.
+          ✅ Competitive Rates: Enjoy excellent value with fair pricing on both shared and private transfers.
         </Typography>
         <Typography variant="body1" paragraph>
-          ✅ Meet & Greet Service: Our friendly staff will be waiting for you at the
-          airport arrivals hall, holding a sign with your name. (Optional, depending
-          on your service)
+          ✅ Meet & Greet Service: Be welcomed at the arrivals hall by our friendly staff, holding a sign with your name (optional, based on your selected service).
         </Typography>
         <Typography
           variant="h6"
