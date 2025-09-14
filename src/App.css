@@ -14,18 +14,24 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--color-primary);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--color-secondary);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--color-accent);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #e65c29;
 }
 
 @keyframes App-logo-spin {
@@ -37,6 +43,43 @@
   }
 }
 
+.button {
+  background-color: var(--color-accent);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e65c29;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('/src/assets/images/airport_transfer.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero .cta-button {
+  composes: button;
+}
+
+/* Carousel container */
 .slick-container {
   height: 100vh; /* Or 100% if parent has defined height */
   width: 100%;
@@ -81,12 +124,12 @@
     height: 60vh;
     min-height: 400px;
   }
-  
+
   .slick-container {
     height: 60vh;
     min-height: 400px;
   }
-  
+
   .slick-slider,
   .slick-list,
   .slick-track,
@@ -100,7 +143,7 @@
     height: 50vh;
     min-height: 350px;
   }
-  
+
   .slick-container {
     height: 50vh;
     min-height: 350px;
