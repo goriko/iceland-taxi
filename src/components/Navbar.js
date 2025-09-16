@@ -56,7 +56,7 @@ function NavBar() {
           <Box
             component="img"
             src="/IWLogo.png"
-            alt="Ride Iceland Logo"
+            alt="Iceland Grand Tours Logo"
             sx={{ display: { xs: "none", md: "flex" }, mr: 1, width: 30, height: 30 }}
           />
           <Typography
@@ -74,7 +74,7 @@ function NavBar() {
               textDecoration: "none",
             }}
           >
-            RIDE ICELAND
+            ICELAND GRAND TOURS
           </Typography>
 
           {/* Mobile Menu Button */}
@@ -125,7 +125,7 @@ function NavBar() {
           <Box
             component="img"
             src="/IWLogo.png"
-            alt="Ride Iceland Logo"
+            alt="Iceland Grand Tours Logo"
             sx={{ display: { xs: "flex", md: "none" }, mr: 1, width: 28, height: 28 }}
           />
           <Typography
@@ -144,7 +144,7 @@ function NavBar() {
               textDecoration: "none",
             }}
           >
-            RIDE ICELAND
+            ICELAND GRAND TOURS
           </Typography>
 
           {/* Desktop Menu */}

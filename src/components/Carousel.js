@@ -46,15 +46,15 @@ const CarouselComponent = () => {
 
   const carouselItems = [
     {
-      title: 'RIDE ICELAND',
-      description: 'Your private chauffeur and tour provider, perfect for businees travelers and families. Making every journey memorable',
+      title: 'Iceland Grand Tours',
+      description: 'Your dedicated chauffeur and tour expert — ideal for business travelers and families, ensuring every journey is unforgettable.',
       backgorundImage: CarouselImage1,
       button1: 'Book Now',
       button2: 'Find Out More'
     },
     {
       title: 'AIRPORT TRANSFER',
-      description: 'Book your airport transfer with Ride Iceland - comfort, reliability, and a memorable start to your journey!',
+      description: 'Travel in style from the moment you land — Iceland Grand Tours delivers airport transfers with comfort and reliability.',
       backgorundImage: CarouselImage2,
       button1: 'Book Airport Transfer',
       button2: 'Find Out More'

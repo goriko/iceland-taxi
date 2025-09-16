@@ -47,7 +47,7 @@ function Home() {
               fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem" }
             }}
           >
-            YOUR EXCITING ICELAND JOURNEY BEGINS HERE.
+            THE GATEWAY TO YOUR ICELAND ADVENTURE BEGINS NOW.
           </Typography>
           <Typography
             variant="h6"
@@ -58,9 +58,7 @@ function Home() {
               fontSize: { xs: "1rem", sm: "1.1rem", md: "1.25rem" }
             }}
           >
-            Explore Iceland with Confidence. Ride Iceland is your 24/7 Private
-            Chauffeur and Tour partner, ensuring a smooth and stress-free
-            experience from arrival to departure.
+            Travel Iceland effortlessly. With Iceland Grand Tours as your 24/7 private chauffeur and tour partner, every moment from arrival to departure is smooth and worry-free.
           </Typography>
           <Box
             sx={{
@@ -144,11 +142,10 @@ function Home() {
               Best Value
             </Typography>
             <Typography variant="h6" sx={{ fontSize: { xs: "1rem", md: "1.25rem" } }}>
-              Adventure awaits, and it doesn't have to break the bank!
+              Unforgettable adventures made affordable
             </Typography>
             <Typography variant="body1" sx={{ fontSize: { xs: "0.9rem", md: "1rem" } }}>
-              Ride Iceland's Best Value Tours offer unforgettable experiences at
-              budget-friendly prices.
+              Our Best Value Tours deliver memorable journeys at prices designed to fit your budget.
             </Typography>
           </CardContent>
         </Card>
@@ -161,16 +158,13 @@ function Home() {
           <CardContent sx={{ textAlign: "center", p: { xs: 2, md: 3 } }}>
             <DescriptionOutlinedIcon sx={{ fontSize: { xs: 60, md: 80 } }} />
             <Typography variant="h4" sx={{ m: 2, fontSize: { xs: "1.5rem", md: "2rem" } }}>
-              Easy Booking
+              Booking
             </Typography>
             <Typography variant="h6" sx={{ fontSize: { xs: "1rem", md: "1.25rem" } }}>
-              Planning your Icelandic escape shouldn't be a hassle!
+              Planning your Iceland adventure should be effortless.
             </Typography>
             <Typography variant="body1" sx={{ fontSize: { xs: "0.9rem", md: "1rem" } }}>
-              Ride Iceland's user-friendly website makes booking your dream
-              tours and activities a breeze. With just a few clicks, you can
-              secure your spot on unforgettable experiences and start counting
-              down the days to your Icelandic adventure.
+              With Iceland Grand Tours’ intuitive website, reserving your dream tours and activities takes only a few clicks. Secure your spot with ease and start looking forward to unforgettable experiences in Iceland.
             </Typography>
           </CardContent>
         </Card>
@@ -183,15 +177,13 @@ function Home() {
           <CardContent sx={{ textAlign: "center", p: { xs: 2, md: 3 } }}>
             <DateRangeOutlinedIcon sx={{ fontSize: { xs: 60, md: 80 } }} />
             <Typography variant="h4" sx={{ m: 2, fontSize: { xs: "1.5rem", md: "2rem" } }}>
-              Flexible Dates
+              Dates
             </Typography>
             <Typography variant="h6" sx={{ fontSize: { xs: "1rem", md: "1.25rem" } }}>
-              Experience Iceland's magic at your own pace
+              iscover Iceland’s wonders on your own terms with Iceland Grand Tours’ Flexible Day Taxi Tours
             </Typography>
             <Typography variant="body1" sx={{ fontSize: { xs: "0.9rem", md: "1rem" } }}>
-              with Ride Iceland's Flexible Days Taxi Tours! We understand that
-              everyone travels differently, so we offer the freedom to create
-              your ideal itinerary without rigid schedule.
+              We know every traveler is unique, so we give you the freedom to design your perfect itinerary without the limits of a fixed schedule.
             </Typography>
           </CardContent>
         </Card>
