@@ -57,7 +57,15 @@ function NavBar() {
             component="img"
             src="/IWLogo.png"
             alt="Iceland Grand Tours Logo"
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1, width: 30, height: 30 }}
+            sx={{ 
+              display: { xs: "none", md: "flex" }, 
+              mr: 1, 
+              width: 50, 
+              height: 50,
+              backgroundColor: "white",
+              borderRadius: "4px",
+              padding: "1px"
+            }}
           />
           <Typography
             variant="h6"
@@ -126,7 +134,15 @@ function NavBar() {
             component="img"
             src="/IWLogo.png"
             alt="Iceland Grand Tours Logo"
-            sx={{ display: { xs: "flex", md: "none" }, mr: 1, width: 28, height: 28 }}
+            sx={{ 
+              display: { xs: "flex", md: "none" }, 
+              mr: 1, 
+              width: 40, 
+              height: 40,
+              backgroundColor: "white",
+              borderRadius: "4px",
+              padding: "1px"
+            }}
           />
           <Typography
             variant="h5"

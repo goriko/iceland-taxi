@@ -1,58 +1,87 @@
 import { PRIMARY, WHITE } from "../constants/UI";
 import { Box, Typography, Card, CardContent, Button } from "@mui/material";
+import { useState, useEffect } from "react";
 import goldenCircleImage from "../assets/images/golden_circle.jpg";
-import blueLagoonImage from "../assets/images/blue_lagoon.jpg";
+import goldenCircleImage1 from "../assets/images/golden-circle-1.png";
+import goldenCircleImage2 from "../assets/images/golden-circle-2.png";
+import southCoastImage1 from "../assets/images/south_coast_1.png";
+import southCoastImage2 from "../assets/images/south_coast_2.png";
 import airportTransferImage from "../assets/images/airport_transfer.jpg";
 
 function ChauffeurServices() {
+  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
+  }, []);
+
   const servicesData = [
     {
       row: 1,
       items: [
         {
-          image: goldenCircleImage,
-          title: "Golden Circle",
-          description: "A drive to the national park and former parliament site at Pingvellir. Next stop is Geysir hot spring area with Strokkur which erupts every few minutes. Then on to Gullfoss waterfall and 2-3 stops on the way back. Duration ~6 hours.",
-          price1: "Car with 1-4 pers. : €680 pr.car",
-          price2: "Car with 5-8 pers. : €890 pr.car",
+          image: goldenCircleImage1,
+          hoverImage: goldenCircleImage2,
+          title: "Golden Circle Discovery",
+          subtitle: "Iceland's Legendary Loop of Fire, Water, and History",
+          description: "Embark on a captivating journey through Iceland's most iconic sights. Begin at Þingvellir National Park, where tectonic plates drift and Iceland's ancient parliament once stood. Witness the explosive beauty of Strokkur geyser in the Geysir hot spring area, then feel the raw power of Gullfoss waterfall. Enjoy 2–3 scenic stops on the return, tailored to your interests.",
+          duration: "~6 hours",
+          price1: "🚗 1–4 persons: €680 per car",
+          price2: "🚐 5–8 persons: €890 per car",
+          includes: "Includes expert chauffeur-guide, flexible pacing, and unforgettable views",
         },
         {
-          image: blueLagoonImage,
-          title: "South Coast",
-          description: "The vast expanse of Iceland's Southern coastal plain, sandwiches snow-capped glaciers and the sea. Seljalandsfoss, Skogafoss, Black beach, Vik. Duration ~12 hours.",
-          price1: "Car with 1-4 pers. : €980 pr.car",
-          price2: "Car with 5-8 pers. : €1.190 pr.car",
+          image: southCoastImage1,
+          hoverImage: southCoastImage2,
+          title: "South Coast Expedition",
+          subtitle: "Where Glaciers Meet the Sea",
+          description: "Journey through Iceland's dramatic southern plains — a land where snow-capped glaciers embrace the Atlantic. Witness the misty power of Seljalandsfoss and Skógafoss, stroll the haunting beauty of Reynisfjara Black Sand Beach, and explore the charming village of Vík.",
+          duration: "~12 hours",
+          price1: "🚗 1–4 persons: €980 per car",
+          price2: "🚐 5–8 persons: €1,190 per car",
+          includes: "Includes your dedicated chauffeur-guide, flexible stops, and unforgettable views.",
         },
         {
           image: airportTransferImage,
-          title: "Silver Circle",
-          description: "A drive north through the dramatic mountain scenery of Hvalfjörður (fjord), the beautiful Hraunfossar and Barnafoss waterfalls. Deildartunguhver, the most powerful geothermal spring in Europe and then Borgarnes. The tour returns to Reykjavik via the Hvalfjorour tunnel 5,762 m long, maximum depth of 165 m below sea level. Duration ~6 hours.",
-          price1: "Car with 1-4 pers. : €610 pr.car",
-          price2: "Car with 5-8 pers. : €810 pr.car",
+          title: "Silver Circle Escape",
+          subtitle: "Geothermal Power, Waterfall Beauty, and Fjord Majesty",
+          description: "Head north into Iceland's rugged heartland, where dramatic mountain passes lead to the cascading wonders of Hraunfossar and Barnafoss. Feel the heat at Deildartunguhver, Europe's most powerful geothermal spring, and explore the charming town of Borgarnes. Return to Reykjavík through the engineering marvel of the Hvalfjörður Tunnel — 5,762 meters long and 165 meters below sea level.",
+          duration: "~6 hours",
+          price1: "🚗 1–4 persons: €610 per car",
+          price2: "🚐 5–8 persons: €810 per car",
+          includes: "Includes expert chauffeur-guide, flexible stops, and breathtaking scenery",
+        },
+        {
+          image: goldenCircleImage,
+          title: "Snæfellsnes Peninsula Quest",
+          subtitle: "Iceland in Miniature — One Peninsula, Endless Wonders",
+          description: "Embark on a full-day journey through the diverse beauty of the Snæfellsnes Peninsula, often called Iceland in Miniature. Discover dramatic coastlines, towering basalt cliffs, volcanic craters, and charming fishing villages — all under the watchful gaze of the mystical Snæfellsjökull glacier.",
+          duration: "~12 hours",
+          price1: "🚗 1–4 persons: €1,090 per car",
+          price2: "🚐 5–8 persons: €1,320 per car",
+          includes: "Includes expert chauffeur-guide, flexible stops, and immersive storytelling across Iceland's most varied landscapes.",
+        },
+        {
+          image: goldenCircleImage,
+          title: "Krýsuvík – Reykjanes Volcanic Frontier",
+          subtitle: "Raw Earth, Rising Steam, and Coastal Drama",
+          description: "Venture into Iceland's dynamic southwest, where geothermal fields, lava flows, and rugged coastlines define the Reykjanes Peninsula. Explore the surreal landscapes of Krýsuvík, shaped by volcanic forces and steaming vents. This tour is subject to road conditions due to active geological zones — adding a layer of thrill to every journey.",
+          duration: "Flexible (based on access)",
+          price1: "🚗 1–4 persons: €470 per car",
+          price2: "🚐 5–8 persons: €620 per car",
+          includes: "Includes expert chauffeur-guide, route flexibility, and real-time safety monitoring in volcanic terrain.",
         },
       ],
     },
     {
       row: 2,
-      items: [
-        {
-          image: goldenCircleImage,
-          title: "Snaefellsnes Peninsula",
-          description: "Unforgettable journey through the breathtaking landscape on the Snaefellsnes Peninsula Tour. Known as 'Iceland in Miniature': dramatic coastlines, towering cliffs, and charming fishing villages. Duration ~12 hours.",
-          price1: "Car with 1-4 pers. : €1.090 pr.car",
-          price2: "Car with 5-8 pers. : €1.320 pr.car",
-        },
-        {
-          image: goldenCircleImage,
-          title: "Krysuvik - Reykjanes",
-          description: "Tour depends on road closures (volcanic area).",
-          price1: "Car with 1-4 pers. : €470 pr.car",
-          price2: "Car with 5-8 pers. : €620 pr.car",
-        },
-      ],
-    },
-    {
-      row: 3,
       items: [
         {
           image: goldenCircleImage,
@@ -75,7 +104,7 @@ function ChauffeurServices() {
       ],
     },
     {
-      row: 4,
+      row: 3,
       items: [
         {
           image: goldenCircleImage,
@@ -113,23 +142,42 @@ function ChauffeurServices() {
 
   const ServiceCard = ({
     image,
+    hoverImage,
     title,
+    subtitle,
     description,
+    duration,
     price1,
     price2,
     returnPrice1,
     returnPrice2,
+    includes,
     showLabels = false,
-  }) => (
+  }) => {
+    const [isHovered, setIsHovered] = useState(false);
+    
+    return (
     <Card
       sx={{
-        flex: 1,
-        minWidth: { xs: "100%", md: "250px" },
-        m: { xs: 1, md: 2 },
+        flex: { 
+          xs: "1 1 100%", 
+          sm: "1 1 calc(50% - 12px)" 
+        },
+        minWidth: { xs: "100%", sm: "300px" },
+        maxWidth: { xs: "100%", sm: "500px" },
+        m: { xs: 0, sm: 0 },
         borderRadius: "30px",
         display: "flex",
         flexDirection: "column",
+        cursor: hoverImage ? "pointer" : "default",
+        transition: "all 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
+        "&:hover": hoverImage ? {
+          transform: "translateY(-4px)",
+          boxShadow: "0 8px 25px rgba(0,0,0,0.15)"
+        } : {}
       }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <CardContent
         sx={{
@@ -147,12 +195,18 @@ function ChauffeurServices() {
             height: { xs: "180px", md: "220px" },
             overflow: "hidden",
             borderRadius: "15px",
+            position: "relative",
           }}
         >
           <img
-            src={image}
+            src={isHovered && hoverImage ? hoverImage : image}
             alt={title}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{ 
+              width: "100%", 
+              height: "100%", 
+              objectFit: "cover",
+              transition: "opacity 0.3s ease-in-out"
+            }}
           />
         </Box>
 
@@ -174,6 +228,23 @@ function ChauffeurServices() {
           {title}
         </Typography>
 
+        {/* Subtitle */}
+        {subtitle && (
+          <Typography
+            variant="h6"
+            sx={{
+              mb: 1,
+              fontSize: { xs: "1rem", md: "1.2rem" },
+              textAlign: "center",
+              fontWeight: "500",
+              color: "text.secondary",
+              fontStyle: "italic",
+            }}
+          >
+            {subtitle}
+          </Typography>
+        )}
+
         {/* Description */}
         {description && (
           <Typography
@@ -185,6 +256,37 @@ function ChauffeurServices() {
             }}
           >
             {description}
+          </Typography>
+        )}
+
+        {/* Duration */}
+        {duration && (
+          <Typography
+            variant="body2"
+            sx={{
+              textAlign: "center",
+              mb: 1,
+              fontWeight: "bold",
+              color: "primary.main",
+            }}
+          >
+            Duration: {duration}
+          </Typography>
+        )}
+
+        {/* Includes */}
+        {includes && (
+          <Typography
+            variant="body2"
+            sx={{
+              textAlign: "center",
+              mb: 2,
+              fontStyle: "italic",
+              color: "text.secondary",
+              fontSize: "0.9rem",
+            }}
+          >
+            {includes}
           </Typography>
         )}
 
@@ -233,7 +335,8 @@ function ChauffeurServices() {
         </Box>
       </CardContent>
     </Card>
-  );
+    );
+  };
 
   return (
     <Box sx={{ m: 2 }}>
@@ -253,12 +356,16 @@ function ChauffeurServices() {
           key={rowIndex}
           sx={{
             display: "flex",
-            flexDirection: { xs: "column", md: "row" },
+            flexDirection: { xs: "column", sm: "row" },
             flexWrap: "wrap",
-            width: { xs: "100%", md: "80%" },
-            px: { xs: "5%", md: "10%" },
-            py: { xs: "3%", md: "3%" },
-            mx: { xs: 0, md: "auto" },
+            width: { xs: "100%", sm: "100%" },
+            px: { xs: "5%", sm: "5%" },
+            py: { xs: "3%", sm: "3%" },
+            mx: { xs: 0, sm: 0 },
+            justifyContent: "center",
+            alignItems: "stretch",
+            gap: { xs: 2, sm: 3 },
+            transition: "all 0.3s ease-in-out",
           }}
         >
           {row.items.map((service, idx) => (

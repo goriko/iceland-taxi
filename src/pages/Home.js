@@ -58,7 +58,8 @@ function Home() {
               fontSize: { xs: "1rem", sm: "1.1rem", md: "1.25rem" }
             }}
           >
-            Travel Iceland effortlessly. With Iceland Grand Tours as your 24/7 private chauffeur and tour partner, every moment from arrival to departure is smooth and worry-free.
+            {/* Travel Iceland effortlessly. With Iceland Grand Tours as your 24/7 private chauffeur and tour partner, every moment from arrival to departure is smooth and worry-free. */}
+            Embark on a journey where wild landscapes meet seamless service. With Iceland Grand Tours as your 24/7 private chauffeur and custom travel partner, every glacier hike, volcano trail, and northern lights chase is delivered with precision, comfort, and local expertise — so you explore boldly, and arrive professionally.
           </Typography>
           <Box
             sx={{
@@ -145,7 +146,7 @@ function Home() {
               Unforgettable adventures made affordable
             </Typography>
             <Typography variant="body1" sx={{ fontSize: { xs: "0.9rem", md: "1rem" } }}>
-              Our Best Value Tours deliver memorable journeys at prices designed to fit your budget.
+              Experience Iceland’s iconic landscapes without compromising comfort or quality. Our Best Value Tours combine expert planning with budget-friendly rates — so you get more adventure for every króna.
             </Typography>
           </CardContent>
         </Card>
@@ -158,13 +159,13 @@ function Home() {
           <CardContent sx={{ textAlign: "center", p: { xs: 2, md: 3 } }}>
             <DescriptionOutlinedIcon sx={{ fontSize: { xs: 60, md: 80 } }} />
             <Typography variant="h4" sx={{ m: 2, fontSize: { xs: "1.5rem", md: "2rem" } }}>
-              Booking
+              Effortless Booking
             </Typography>
             <Typography variant="h6" sx={{ fontSize: { xs: "1rem", md: "1.25rem" } }}>
-              Planning your Iceland adventure should be effortless.
+              Plan Boldly, Book Easily
             </Typography>
             <Typography variant="body1" sx={{ fontSize: { xs: "0.9rem", md: "1rem" } }}>
-              With Iceland Grand Tours’ intuitive website, reserving your dream tours and activities takes only a few clicks. Secure your spot with ease and start looking forward to unforgettable experiences in Iceland.
+              Your Iceland journey begins with just a few clicks. Iceland Grand Tours’ streamlined booking platform makes it simple to reserve custom tours, activities, and transfers — so you can focus on the thrill ahead.
             </Typography>
           </CardContent>
         </Card>
@@ -177,13 +178,13 @@ function Home() {
           <CardContent sx={{ textAlign: "center", p: { xs: 2, md: 3 } }}>
             <DateRangeOutlinedIcon sx={{ fontSize: { xs: 60, md: 80 } }} />
             <Typography variant="h4" sx={{ m: 2, fontSize: { xs: "1.5rem", md: "2rem" } }}>
-              Dates
+              Flexible Dates
             </Typography>
             <Typography variant="h6" sx={{ fontSize: { xs: "1rem", md: "1.25rem" } }}>
-              iscover Iceland’s wonders on your own terms with Iceland Grand Tours’ Flexible Day Taxi Tours
+              Your Schedule, Your Iceland
             </Typography>
             <Typography variant="body1" sx={{ fontSize: { xs: "0.9rem", md: "1rem" } }}>
-              We know every traveler is unique, so we give you the freedom to design your perfect itinerary without the limits of a fixed schedule.
+              No rigid itineraries. No compromises. With our Flexible Day Taxi Tours, you choose the pace, the places, and the moments that matter. Iceland Grand Tours adapts to your rhythm — adventure on your terms.
             </Typography>
           </CardContent>
         </Card>

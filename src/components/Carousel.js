@@ -2,9 +2,9 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { Card, CardContent, Typography, Box, Button } from '@mui/material';
-import CarouselImage1 from '../assets/images/carousel-1.jpg'
-import CarouselImage2 from '../assets/images/carousel-2.jpg'
-import CarouselImage3 from '../assets/images/carousel-3.jpg'
+import CarouselImage1 from '../assets/images/carousel1.png'
+import CarouselImage2 from '../assets/images/carousel2.png'
+import CarouselImage3 from '../assets/images/carousel3.png'
 import { PRIMARY, WHITE } from "../constants/UI";
 
 import "../App.css"
@@ -47,21 +47,21 @@ const CarouselComponent = () => {
   const carouselItems = [
     {
       title: 'Iceland Grand Tours',
-      description: 'Your dedicated chauffeur and tour expert — ideal for business travelers and families, ensuring every journey is unforgettable.',
+      description: "Private chauffeur. Local expertise. Breathtaking landscapes. Whether you're traveling for business or bonding as a family, our tailored Iceland tours deliver seamless comfort and once-in-a-lifetime moments — all curated just for you.",
       backgorundImage: CarouselImage1,
       button1: 'Book Now',
       button2: 'Find Out More'
     },
     {
       title: 'AIRPORT TRANSFER',
-      description: 'Travel in style from the moment you land — Iceland Grand Tours delivers airport transfers with comfort and reliability.',
+      description: 'Step off the plane and into comfort — Iceland Grand Tours offers seamless airport transfers with a personal chauffeur, plush vehicles, and local expertise. Start your Icelandic journey relaxed, refreshed, and ready to explore.',
       backgorundImage: CarouselImage2,
       button1: 'Book Airport Transfer',
       button2: 'Find Out More'
     },
     {
       title: 'TAILORED TOURS!',
-      description: '',
+      description: 'Every stop, every view, every moment — personalized for your pace, passions, and sense of wonder.',
       backgorundImage: CarouselImage3,
       button1: 'Arrange Your Tailored Tour Today',
       button2: 'Find Out More'
@@ -75,19 +75,32 @@ const CarouselComponent = () => {
           <Box key={index} className="slick-slide">
             <Card sx={{
               backgroundImage: `url(${item.backgorundImage})`,
-              opacity: 1,
               backgroundSize: "cover",
               height: "100%",
               display: 'flex',
               flexDirection: 'column', // Align items vertically
               alignItems: 'center',    // Center items horizontally
-              justifyContent: 'center'
+              justifyContent: 'center',
+              position: 'relative',
+              '&::before': {
+                content: '""',
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundColor: PRIMARY,
+                opacity: 0.4,
+                zIndex: 1
+              }
             }}>
               <CardContent sx={{
                 m: "auto",
                 textAlign: "center",
                 px: { xs: 2, sm: 4, md: 6 },
-                py: { xs: 2, sm: 3, md: 4 }
+                py: { xs: 2, sm: 3, md: 4 },
+                position: 'relative',
+                zIndex: 2
               }}>
                 <Typography
                   variant="h3"
@@ -95,7 +108,7 @@ const CarouselComponent = () => {
                   color="white"
                   sx={{
                     m: 1,
-                    fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem" },
+                    fontSize: { xs: "1.8rem", sm: "2.5rem", md: "3.5rem" },
                     fontWeight: "bold"
                   }}
                 >
@@ -106,7 +119,7 @@ const CarouselComponent = () => {
                   color="white"
                   sx={{
                     m: 1,
-                    fontSize: { xs: "0.9rem", sm: "1rem", md: "1.1rem" },
+                    fontSize: { xs: "1.1rem", sm: "1.2rem", md: "1.3rem" },
                     maxWidth: { xs: "90%", sm: "80%", md: "70%" },
                     mx: "auto"
                   }}
