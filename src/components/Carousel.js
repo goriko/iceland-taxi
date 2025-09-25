@@ -144,6 +144,11 @@ const CarouselComponent = () => {
                       px: { xs: 2, sm: 3, md: 4 },
                       py: { xs: 1, sm: 1.5, md: 2 }
                     }}
+                    onClick={() => {
+                      if (item.title === "AIRPORT TRANSFER") {
+                        navigate("/airport-transfer#booking-form");
+                      }
+                    }}
                   >
                     {item.button1}
                   </Button>

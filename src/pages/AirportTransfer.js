@@ -1,7 +1,7 @@
 // src/pages/AirportTransfer.js
 import NavBar from "../components/Navbar";
 import FooterComponent from "../components/Footer";
-import airportTransferImage from "../assets/images/airport_transfer.jpg";
+import carouselImage2 from "../assets/images/carousel2.png";
 import {
   Box,
   Typography,
@@ -11,8 +11,20 @@ import {
   FormControlLabel,
 } from "@mui/material";
 import { PRIMARY, } from "../constants/UI";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const AirportTransfer = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#booking-form") {
+      const form = document.getElementById("booking-form");
+      if (form) {
+        form.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <>
       <NavBar />
@@ -20,7 +32,7 @@ const AirportTransfer = () => {
       {/* Hero Section */}
       <Box
         sx={{
-          backgroundImage: `url(${airportTransferImage})`,
+          backgroundImage: `url(${carouselImage2})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -88,26 +100,8 @@ const AirportTransfer = () => {
         >
           Book Your Iceland Airport Transfer Today!
         </Typography>
-        {/* Book Now Button */}
-        <Button
-          variant="contained"
-          sx={{
-            mt: 2,
-            px: 4,
-            py: 1.5,
-            fontSize: "1rem",
-            fontWeight: "bold",
-            backgroundColor: PRIMARY,
-            color: "white",
-            "&:hover": {
-              backgroundColor: "#004aad",
-            },
-          }}
-        >
-          Book Now
-        </Button>
         {/* Booking Form */}
-        <Box
+        <Box id="booking-form"
           component="form"
           sx={{
             mt: 4,
