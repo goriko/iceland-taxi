@@ -4,7 +4,6 @@ import {
   TextField,
   Button
 } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { PRIMARY, WHITE } from "../constants/UI";
 
 function ContactUsComponent() {
