@@ -1,5 +1,4 @@
 import * as React from "react";
-import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
 import { PRIMARY } from "../constants/UI";
 import {

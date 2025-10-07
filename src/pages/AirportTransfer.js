@@ -9,13 +9,18 @@ import {
   TextField,
   Checkbox,
   FormControlLabel,
+  Snackbar,
+  Alert,
 } from "@mui/material";
 import { PRIMARY, } from "../constants/UI";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import emailjs from "emailjs-com";
 
 const AirportTransfer = () => {
   const location = useLocation();
+  const [open, setOpen] = useState(false);   // Snackbar visibility
+  const [error, setError] = useState(false); // Success/Error state
 
   useEffect(() => {
     if (location.hash === "#booking-form") {
@@ -25,6 +30,32 @@ const AirportTransfer = () => {
       }
     }
   }, [location]);
+
+  // Handle EmailJS form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "IGTService_9jrpt0v!",   //replace with EmailJS Service ID
+        "IGTTemplate_4007cr5!",  //replace with EmailJS Template ID
+        e.target,
+        "GFF-5iOaw80fWGb66"  //replace with your Public Key
+      )
+      .then(
+        () => {
+          setError(false);
+          setOpen(true);
+          e.target.reset();
+        },
+        (error) => {
+          setError(true);
+          setOpen(true);
+          console.error(error);
+        }
+      );
+  };
+
   return (
     <>
       <NavBar />
@@ -101,8 +132,10 @@ const AirportTransfer = () => {
           Book Your Iceland Airport Transfer Today!
         </Typography>
         {/* Booking Form */}
-        <Box id="booking-form"
+        <Box
+          id="booking-form"
           component="form"
+          onSubmit={handleSubmit}
           sx={{
             mt: 4,
             display: "flex",
@@ -111,14 +144,16 @@ const AirportTransfer = () => {
             textAlign: "left",
           }}
         >
-          <TextField label="Full Name" variant="outlined" required fullWidth />
-          <TextField label="Email Address" type="email" variant="outlined" required fullWidth />
-          <TextField label="Phone Number" type="tel" variant="outlined" required fullWidth />
-          <TextField label="Date of Arrival/Departure" type="date" InputLabelProps={{ shrink: true }} required fullWidth />
-          <TextField label="Time of Arrival/Departure" type="time" InputLabelProps={{ shrink: true }} required fullWidth />
-          <TextField label="Pickup Location" variant="outlined" required fullWidth />
-          <TextField label="Drop-off Location" variant="outlined" required fullWidth />
+          <input type="hidden" name="serviceType" value="Airport Transfer" />
+          <TextField name="name" label="Full Name" variant="outlined" required fullWidth />
+          <TextField name="email" label="Email Address" type="email" variant="outlined" required fullWidth />
+          <TextField name="phone" label="Phone Number" type="tel" variant="outlined" required fullWidth />
+          <TextField name="date" label="Date of Arrival/Departure" type="date" InputLabelProps={{ shrink: true }} required fullWidth />
+          <TextField name="time" label="Time of Arrival/Departure" type="time" InputLabelProps={{ shrink: true }} required fullWidth />
+          <TextField name="pickup" label="Pickup Location" variant="outlined" required fullWidth />
+          <TextField name="dropoff" label="Drop-off Location" variant="outlined" required fullWidth />
           <TextField
+            name="info"
             label="Additional Information"
             multiline
             rows={4}
@@ -134,6 +169,7 @@ const AirportTransfer = () => {
           {/* Action Buttons */}
           <Box sx={{ display: "flex", gap: 2, mt: 2 }}>
             <Button
+              type="submit"
               variant="contained"
               sx={{
                 flex: 1,
@@ -153,6 +189,22 @@ const AirportTransfer = () => {
           </Box>
         </Box>
       </Box>
+
+      {/* Snackbar for feedback */}
+      <Snackbar
+        open={open}
+        autoHideDuration={4000}
+        onClose={() => setOpen(false)}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+      >
+        <Alert
+          onClose={() => setOpen(false)}
+          severity={error ? "error" : "success"}
+          sx={{ width: "100%" }}
+        >
+          {error ? "❌ Failed to send booking. Please try again." : "✅ Booking request sent successfully!"}
+        </Alert>
+      </Snackbar>
 
       <FooterComponent />
     </>
