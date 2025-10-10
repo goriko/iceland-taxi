@@ -38,7 +38,7 @@ export default function BookingForm({ service }) {
         <TextField name="time" label="Time of Arrival/Departure" type="time" InputLabelProps={{ shrink: true }} required fullWidth />
         <TextField name="pickup" label="Pickup Location" required fullWidth />
         <TextField name="dropoff" label="Drop-off Location" required fullWidth />
-        <TextField name="info" label="Additional Information" multiline rows={4} fullWidth />
+        <TextField name="info" label="Additional Information" multiline rows={4} fullWidth placeholder="You can enter other information such as hotel name, flight details, number of luggages, SPECIAL requests, ETA, etc." />
 
         <FormControlLabel control={<Checkbox required />} label="I have agreed to the terms and conditions" />
 

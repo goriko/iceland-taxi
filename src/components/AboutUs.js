@@ -18,7 +18,7 @@ L.Icon.Default.mergeOptions({
 
 function AboutUsComponent() {
 
-  const position = [40.6892, -74.0445];
+  const position = [64.0049, -22.5624];
 
   return (
     <Box sx={{ m: { xs: 2, md: 4 } }}>
@@ -93,7 +93,7 @@ function AboutUsComponent() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           <Marker position={position}>
-            <Popup>Statue of Liberty</Popup>
+            <Popup>Keflavík, Iceland</Popup>
           </Marker>
         </MapContainer>
       </Box>
