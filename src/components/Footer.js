@@ -45,7 +45,7 @@ function FooterComponent() {
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
             >
-              Iceland Grand Tours ehf.
+              Iceland Grand Tours
             </Typography>
             <Typography
               variant="body1"
@@ -55,9 +55,9 @@ function FooterComponent() {
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
             >
-              225 Garðabær, Iceland
+              105 Bogahlid, Iceland
             </Typography>
-            <Typography
+            {/* <Typography
               variant="body1"
               sx={{
                 color: WHITE,
@@ -65,8 +65,8 @@ function FooterComponent() {
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
             >
-              KT : 600225-2430
-            </Typography>
+              KT : 600225-2430 change this or update this later
+            </Typography> */}
           </Box>
           <Box sx={{ m: { xs: 2, md: 3 } }}>
             <Typography
@@ -87,7 +87,7 @@ function FooterComponent() {
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
             >
-              +354 888 3191
+              +354 770 3560
             </Typography>
             <Typography
               variant="body1"
@@ -97,9 +97,9 @@ function FooterComponent() {
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
             >
-              icelandgrandtours@gmail.com
+              icelandgrand77@gmail.com
             </Typography>
-            <Typography
+            {/* <Typography
               variant="body1"
               sx={{
                 color: WHITE,
@@ -108,7 +108,7 @@ function FooterComponent() {
               }}
             >
               Legal Notice | Privacy Policy
-            </Typography>
+            </Typography> */}
           </Box>
         </Box>
         <Box sx={{ flex: 1, textAlign: "center" }}>

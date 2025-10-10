@@ -12,15 +12,18 @@ import FAQComponent from "../components/FAQ";
 import AboutUsComponent from "../components/AboutUs";
 import ContactUsComponent from "../components/ContactUs";
 import FooterComponent from "../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <>
       <NavBar />
       <Box id="home">
         <CarouselComponent />
       </Box>
-      <Box
+      <Box id="chauffeur"
         sx={{
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
@@ -82,6 +85,7 @@ function Home() {
                 px: { xs: 3, md: 4 },
                 py: { xs: 1.5, md: 2 }
               }}
+              onClick={() => navigate("/chauffeur-booking/Iceland%20Grand%20Tours")}
             >
               Book A Ride
             </Button>
@@ -95,6 +99,12 @@ function Home() {
                 fontSize: { xs: "0.9rem", md: "1rem" },
                 px: { xs: 3, md: 4 },
                 py: { xs: 1.5, md: 2 }
+              }}
+              onClick={() => {
+                const section = document.getElementById("contact-us");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
               }}
             >
               Contact Us
@@ -119,7 +129,7 @@ function Home() {
           />
         </Box>
       </Box>
-      <Box
+      <Box id="tailored-tours"
         sx={{
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
@@ -192,9 +202,9 @@ function Home() {
       <Box id="chauffeur-services">
         <ChauffeurServices />
       </Box>
-      <Box id="reviews">
+      {/* <Box id="reviews">
         <ReviewComponent />
-      </Box>
+      </Box> */}
       <Box id="faqs">
         <FAQComponent />
       </Box>

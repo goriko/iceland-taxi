@@ -19,7 +19,7 @@ const pages = [
   "Home",
   "Airport Transfer",
   "Tours",
-  "Reviews",
+  // "Reviews",
   "FAQS",
   "About",
   "Contact",
@@ -29,7 +29,7 @@ const pageLinks = {
   Home: "/#home",
   "Airport Transfer": "/airport-transfer",
   Tours: "/#chauffeur-services",
-  Reviews: "/#reviews",
+  // Reviews: "/#reviews",
   FAQS: "/#faqs",
   About: "/#about-us",
   Contact: "/#contact-us",
@@ -56,10 +56,10 @@ function NavBar() {
             component="img"
             src="/IWLogo.png"
             alt="Iceland Grand Tours Logo"
-            sx={{ 
-              display: { xs: "none", md: "flex" }, 
-              mr: 1, 
-              width: 50, 
+            sx={{
+              display: { xs: "none", md: "flex" },
+              mr: 1,
+              width: 50,
               height: 50,
               backgroundColor: "white",
               borderRadius: "4px",
@@ -133,10 +133,10 @@ function NavBar() {
             component="img"
             src="/IWLogo.png"
             alt="Iceland Grand Tours Logo"
-            sx={{ 
-              display: { xs: "flex", md: "none" }, 
-              mr: 1, 
-              width: 40, 
+            sx={{
+              display: { xs: "flex", md: "none" },
+              mr: 1,
+              width: 40,
               height: 40,
               backgroundColor: "white",
               borderRadius: "4px",

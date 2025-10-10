@@ -5,6 +5,7 @@ import NavBar from "../components/Navbar";
 import FooterComponent from "../components/Footer";
 import BookingForm from "../components/BookingForm";
 import { servicesData } from "../data/services";
+import booknowImage from "../assets/images/book-now.png";
 
 export default function ChauffeurBooking() {
   const { serviceId } = useParams();
@@ -24,7 +25,7 @@ export default function ChauffeurBooking() {
       {/* Hero banner */}
       <Box
         sx={{
-          backgroundImage: `url(${service?.image})`,
+          backgroundImage: service?.image ? `url(${service.image})` : `url(${booknowImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "50vh",

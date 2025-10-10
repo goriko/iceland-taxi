@@ -147,6 +147,10 @@ const CarouselComponent = () => {
                     onClick={() => {
                       if (item.title === "AIRPORT TRANSFER") {
                         navigate("/airport-transfer#booking-form");
+                      } else if (item.title === "Iceland Grand Tours") {
+                        navigate(`/chauffeur-booking/${encodeURIComponent(item.title)}`);
+                      } else if (item.title === "TAILORED TOURS!") {
+                        navigate(`/chauffeur-booking/Tailored%20Tours#booking-form`);
                       }
                     }}
                   >
@@ -166,6 +170,16 @@ const CarouselComponent = () => {
                     onClick={() => {
                       if (item.title === "AIRPORT TRANSFER") {
                         navigate("/airport-transfer");
+                      } else if (item.title === "Iceland Grand Tours") {
+                        const section = document.getElementById("chauffeur");
+                        if (section) {
+                          section.scrollIntoView({ behavior: "smooth" });
+                        }
+                      } else if (item.title === "TAILORED TOURS!") {
+                        const section = document.getElementById("tailored-tours");
+                        if (section) {
+                          section.scrollIntoView({ behavior: "smooth" });
+                        }
                       }
                     }}
                   >
