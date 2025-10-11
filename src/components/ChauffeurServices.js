@@ -175,16 +175,16 @@ function ChauffeurServices() {
             {showLabels ? (
               <>
                 <Typography variant="body1" fontWeight="bold">
-                  One Way – {price1}
+                  {price1}
                 </Typography>
                 <Typography variant="body1" fontWeight="bold">
-                  One Way – {price2}
+                  {price2}
                 </Typography>
                 <Typography variant="body1" fontWeight="bold" mt={1}>
-                  Return – {returnPrice1}
+                  {returnPrice1}
                 </Typography>
                 <Typography variant="body1" fontWeight="bold">
-                  Return – {returnPrice2}
+                  {returnPrice2}
                 </Typography>
               </>
             ) : (
