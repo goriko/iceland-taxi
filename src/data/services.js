@@ -11,8 +11,8 @@ import volcanicFrontierImage1 from "../assets/images/reykjanes-volcanic-frontier
 import volcanicFrontierImage2 from "../assets/images/reykjanes-volcanic-frontier-2.png";
 import reykjavikSightseeingImage1 from "../assets/images/reykjavik-sightseeing-1.png";
 import reykjavikSightseeingImage2 from "../assets/images/reykjavik-sightseeing-2.png";
-import cityCenterImage1 from "../assets/images/city-center-1.png";
-import cityCenterImage2 from "../assets/images/city-center-2.png";
+import auroraDreamsImage1 from "../assets/images/aurora-dreams--night-sky-adventure-seasonal-wonder-1.png";
+import auroraDreamsImage2 from "../assets/images/aurora-dreams--night-sky-adventure-seasonal-wonder-2.png";
 import keflavikAirportImage1 from "../assets/images/keflavik-airport-1.png";
 import keflavikAirportImage2 from "../assets/images/keflavik-airport-2.png";
 import blueLagoonImage1 from "../assets/images/blue-lagoon-1.png";
@@ -40,7 +40,7 @@ export const servicesData = [
                 duration: "~6 hours",
                 price1: "🚗 1–4 persons: €680 per car",
                 price2: "🚐 5–8 persons: €890 per car",
-                includes: "Includes expert chauffeur-guide, flexible pacing, and unforgettable views",
+                includes: "Includes expert driver-guide, flexible pacing, and unforgettable views",
             },
             {
                 image: southCoastImage1,
@@ -51,7 +51,7 @@ export const servicesData = [
                 duration: "~12 hours",
                 price1: "🚗 1–4 persons: €980 per car",
                 price2: "🚐 5–8 persons: €1,190 per car",
-                includes: "Includes your dedicated chauffeur-guide, flexible stops, and unforgettable views.",
+                includes: "Includes your dedicated driver-guide, flexible stops, and unforgettable views.",
             },
             {
                 image: silverCircleImage1,
@@ -62,7 +62,7 @@ export const servicesData = [
                 duration: "~6 hours",
                 price1: "🚗 1–4 persons: €610 per car",
                 price2: "🚐 5–8 persons: €810 per car",
-                includes: "Includes expert chauffeur-guide, flexible stops, and breathtaking scenery",
+                includes: "Includes expert driver-guide, flexible stops, and breathtaking scenery",
             },
             {
                 image: peninsulaImage1,
@@ -73,7 +73,7 @@ export const servicesData = [
                 duration: "~12 hours",
                 price1: "🚗 1–4 persons: €1,090 per car",
                 price2: "🚐 5–8 persons: €1,320 per car",
-                includes: "Includes expert chauffeur-guide, flexible stops, and immersive storytelling across Iceland's most varied landscapes.",
+                includes: "Includes expert driver-guide, flexible stops, and immersive storytelling across Iceland's most varied landscapes.",
             },
             {
                 image: volcanicFrontierImage1,
@@ -84,7 +84,7 @@ export const servicesData = [
                 duration: "Flexible (based on access)",
                 price1: "🚗 1–4 persons: €470 per car",
                 price2: "🚐 5–8 persons: €620 per car",
-                includes: "Includes expert chauffeur-guide, route flexibility, and real-time safety monitoring in volcanic terrain.",
+                includes: "Includes expert driver-guide, route flexibility, and real-time safety monitoring in volcanic terrain.",
             },
         ],
     },
@@ -103,15 +103,16 @@ export const servicesData = [
                 includes: "Includes: Expert local driver-guide, flexible stops, and engaging storytelling.",
             },
             {
-                image: cityCenterImage1,
-                hoverImage: cityCenterImage2,
-                title: "Iceland City Center Tour",
-                subtitle: "A Quick Journey Through Reykjavík's Heart — Culture, Landmarks & Local Life",
-                description: "Discover the charm and character of Iceland's capital in a compact 2-hour tour. Visit iconic landmarks such as Hallgrímskirkja, Harpa Concert Hall, the Sun Voyager, and stroll through vibrant streets filled with history, art, and local culture. Perfect for travelers who want a brief yet meaningful introduction to Reykjavík.",
-                duration: "~2 hours",
-                price1: "🚗 Car (1–4 persons): €25 per car",
-                price2: "🚐 Van (5–8 persons): €35 per car",
-                includes: "Includes: Local driver-guide, flexible stops, and engaging storytelling.",
+                image: auroraDreamsImage1,
+                hoverImage: auroraDreamsImage2,
+                title: "Aurora Dreams: Night Sky Adventure",
+                subtitle: "Seasonal Wonder — Available November to May",
+                description: "Step into the heart of Iceland's night as you chase the celestial beauty of the Northern Lights. This private tour offers a front-row seat to nature's most breathtaking performance — the Aurora Borealis dancing across Arctic skies. Let the stars guide your journey and create unforgettable memories under the glow of the aurora.",
+                duration: "One Way: ~45 minutes (to viewing location) | Return: ~2 hours total (including 1-hour viewing)",
+                price1: "🚗 Return – Car (1–4 persons): €450 per car",
+                price2: "🚐 Return – Van (5–8 persons): €550 per car",
+                includes: "Includes: Private vehicle, local driver, flexible pick-up/drop-off, and Aurora forecast monitoring.",
+                note: "📌 Note: Tour operates only during Aurora season (Nov–May). 🕓 Return option includes up to 1 hour of Aurora viewing (2 hours total).",
             },
             {
                 image: keflavikAirportImage1,

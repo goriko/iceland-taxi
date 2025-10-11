@@ -10,6 +10,9 @@ import { PRIMARY, WHITE } from "../constants/UI";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import PhoneIcon from "@mui/icons-material/Phone";
+import ChatIcon from "@mui/icons-material/Chat";
 
 function FooterComponent() {
   return (
@@ -29,7 +32,7 @@ function FooterComponent() {
       >
         <Grid container spacing={{ xs: 1, md: 2 }} justifyContent="center" alignItems="center">
           {/* Column 1: Company Info & Address */}
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ 
               textAlign: { xs: "center", md: "left" },
               px: { xs: 2, md: 0.5 },
@@ -76,7 +79,7 @@ function FooterComponent() {
           </Grid>
 
           {/* Column 2: Contact Information */}
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ 
               textAlign: { xs: "center", md: "left" },
               px: { xs: 2, md: 0.5 },
@@ -96,18 +99,79 @@ function FooterComponent() {
               >
                 Contact Us
               </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: WHITE,
-                  fontSize: { xs: "0.85rem", md: "0.9rem" },
-                  mb: 0.5,
-                  opacity: 0.9,
-                  lineHeight: 1.4
-                }}
-              >
-                +354 770 3560
-              </Typography>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 0.5 }}>
+                <Typography
+                  variant="body1"
+                  sx={{
+                    color: WHITE,
+                    fontSize: { xs: "0.85rem", md: "0.9rem" },
+                    opacity: 0.9,
+                    lineHeight: 1.4
+                  }}
+                >
+                  +354 770 3560
+                </Typography>
+                <Box sx={{ display: "flex", gap: 0.5 }}>
+                  <Tooltip title="Call Now">
+                    <IconButton
+                      component="a"
+                      href="tel:+3547703560"
+                      sx={{
+                        color: "#4CAF50",
+                        backgroundColor: "rgba(76, 175, 80, 0.1)",
+                        "&:hover": {
+                          backgroundColor: "rgba(76, 175, 80, 0.2)",
+                          transform: "scale(1.1)"
+                        },
+                        transition: "all 0.3s ease",
+                        p: 0.5,
+                        display: { xs: "flex", md: "none" }
+                      }}
+                    >
+                      <PhoneIcon sx={{ fontSize: "1.2rem" }} />
+                    </IconButton>
+                  </Tooltip>
+                  <Tooltip title="Send Message">
+                    <IconButton
+                      component="a"
+                      href="sms:+3547703560"
+                      sx={{
+                        color: "#2196F3",
+                        backgroundColor: "rgba(33, 150, 243, 0.1)",
+                        "&:hover": {
+                          backgroundColor: "rgba(33, 150, 243, 0.2)",
+                          transform: "scale(1.1)"
+                        },
+                        transition: "all 0.3s ease",
+                        p: 0.5,
+                        display: { xs: "flex", md: "none" }
+                      }}
+                    >
+                      <ChatIcon sx={{ fontSize: "1.2rem" }} />
+                    </IconButton>
+                  </Tooltip>
+                  <Tooltip title="Chat on WhatsApp">
+                    <IconButton
+                      component="a"
+                      href="https://wa.me/3547703560"
+                      target="_blank"
+                      rel="noopener"
+                      sx={{
+                        color: "#25D366",
+                        backgroundColor: "rgba(37, 211, 102, 0.1)",
+                        "&:hover": {
+                          backgroundColor: "rgba(37, 211, 102, 0.2)",
+                          transform: "scale(1.1)"
+                        },
+                        transition: "all 0.3s ease",
+                        p: 0.5
+                      }}
+                    >
+                      <WhatsAppIcon sx={{ fontSize: "1.2rem" }} />
+                    </IconButton>
+                  </Tooltip>
+                </Box>
+              </Box>
               <Typography
                 variant="body1"
                 sx={{
@@ -135,7 +199,7 @@ function FooterComponent() {
           </Grid>
 
           {/* Column 3: Social Media & Copyright */}
-          <Grid item xs={12} md={4}>
+          <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ 
               textAlign: { xs: "center", md: "right" },
               px: { xs: 2, md: 0.5 },

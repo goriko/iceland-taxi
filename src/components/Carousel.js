@@ -54,7 +54,7 @@ const CarouselComponent = () => {
     },
     {
       title: 'AIRPORT TRANSFER',
-      description: 'Step off the plane and into comfort — Iceland Grand Tours offers seamless airport transfers with a personal chauffeur, plush vehicles, and local expertise. Start your Icelandic journey relaxed, refreshed, and ready to explore.',
+      description: 'Step off the plane and into comfort — Iceland Grand Tours offers seamless airport transfers with a personal driver, plush vehicles, and local expertise. Start your Icelandic journey relaxed, refreshed, and ready to explore.',
       backgorundImage: CarouselImage2,
       button1: 'Book Airport Transfer',
       button2: 'Find Out More'

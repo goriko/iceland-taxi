@@ -38,7 +38,7 @@ export default function ChauffeurBooking() {
           textShadow: "2px 2px 6px rgba(0,0,0,0.7)",
         }}
       >
-        {service?.title || "Chauffeur Booking"}
+        {service?.title || "Driver Booking"}
       </Box>
 
       {/* Service details + booking form */}
@@ -50,7 +50,7 @@ export default function ChauffeurBooking() {
         )}
 
         <Typography variant="h6" fontWeight="bold" color="primary.main" mt={3}>
-          Book Your Chauffeur Service Today!
+          Book Your Driver Service Today!
         </Typography>
 
         {/* pass service info into the form if you want */}
