@@ -8,8 +8,6 @@ import {
 } from "@mui/material";
 import { PRIMARY, WHITE } from "../constants/UI";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import PhoneIcon from "@mui/icons-material/Phone";
 import ChatIcon from "@mui/icons-material/Chat";
@@ -230,7 +228,7 @@ function FooterComponent() {
                 <Tooltip title="Facebook">
                   <IconButton
                     component="a"
-                    href="https://www.facebook.com"
+                    href="https://www.facebook.com/profile.php?id=61581971946275"
                     target="_blank"
                     rel="noopener"
                     sx={{ 
@@ -247,7 +245,7 @@ function FooterComponent() {
                   </IconButton>
                 </Tooltip>
 
-                <Tooltip title="Twitter">
+                {/* <Tooltip title="Twitter">
                   <IconButton
                     component="a"
                     href="https://www.twitter.com"
@@ -285,7 +283,7 @@ function FooterComponent() {
                   >
                     <InstagramIcon />
                   </IconButton>
-                </Tooltip>
+                </Tooltip> */}
               </Stack>
               <Typography
                 variant="body2"

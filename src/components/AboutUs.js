@@ -122,7 +122,7 @@ function AboutUsComponent() {
             fontSize: { xs: "0.9rem", md: "1rem" }
           }}
         >
-          We blend reliable private transfers with carefully crafted tours, guided by professional driver and licensed experts who share a deep passion and years of local knowledge. From exploring the Golden Circle and relaxing in geothermal lagoons to discovering hidden treasures beyond the usual routes, our team is dedicated to making every journey as inspiring as the destination.
+          We blend reliable private transfers with carefully crafted tours, guided by professional driver and experts who share a deep passion and years of local knowledge. From exploring the Golden Circle and relaxing in geothermal lagoons to discovering hidden treasures beyond the usual routes, our team is dedicated to making every journey as inspiring as the destination.
         </Typography>
         <Typography
           variant="body1"
