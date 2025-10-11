@@ -32,6 +32,7 @@ function ChauffeurServices() {
     returnPrice1,
     returnPrice2,
     includes,
+    note,
     showLabels = false,
   }) => {
     const [isHovered, setIsHovered] = useState(false);
@@ -167,6 +168,26 @@ function ChauffeurServices() {
               }}
             >
               {includes}
+            </Typography>
+          )}
+
+          {/* Note */}
+          {note && (
+            <Typography
+              variant="body2"
+              sx={{
+                textAlign: "center",
+                mb: 2,
+                fontWeight: "bold",
+                color: "warning.main",
+                fontSize: "0.9rem",
+                backgroundColor: "rgba(255, 152, 0, 0.1)",
+                padding: "8px",
+                borderRadius: "8px",
+                border: "1px solid rgba(255, 152, 0, 0.3)",
+              }}
+            >
+              {note}
             </Typography>
           )}
 
