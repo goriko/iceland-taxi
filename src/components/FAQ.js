@@ -107,7 +107,7 @@ function FAQComponent() {
           <AccordionDetails>
             <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>For your comfort and convenience, Iceland Grand Tours offers the following premium services :</Typography>
             <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Expert Private Driver Experience</Typography>
-            <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Licensed Tour Guides</Typography>
+            <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Experienced Tour Guides</Typography>
             <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Well-maintained luxury and standard vehicles for your comfort.</Typography>
           </AccordionDetails>
         </Accordion>
