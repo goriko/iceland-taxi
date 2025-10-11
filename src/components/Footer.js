@@ -3,7 +3,8 @@ import {
   Typography,
   Stack,
   Tooltip,
-  IconButton
+  IconButton,
+  Grid
 } from "@mui/material";
 import { PRIMARY, WHITE } from "../constants/UI";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -12,160 +13,218 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 
 function FooterComponent() {
   return (
-    <Box sx={{ p: { xs: 2, md: 4 }, backgroundColor: PRIMARY }}>
+    <Box sx={{ p: { xs: 0.5, md: 1 }, backgroundColor: PRIMARY }}>
       <Box
         sx={{
-          display: "flex",
-          flexDirection: { xs: "column", md: "row" },
-          width: { xs: "100%", md: "80%" },
-          paddingLeft: { xs: "5%", md: "10%" },
-          paddingRight: { xs: "5%", md: "10%" },
-          paddingTop: { xs: "3%", md: "3%" },
-          paddingBottom: { xs: "3%", md: "3%" },
+          width: { xs: "100%", md: "90%" },
+          paddingLeft: { xs: "5%", md: "5%" },
+          paddingRight: { xs: "5%", md: "5%" },
+          paddingTop: { xs: "0.5%", md: "0.8%" },
+          paddingBottom: { xs: "0.5%", md: "0.8%" },
           mx: { xs: 0, md: "auto" }
         }}
       >
-        <Box sx={{ flex: 1, textAlign: { xs: "center", md: "left" } }}>
-          <Box sx={{ m: { xs: 2, md: 3 } }}>
-            <Typography
-              variant="h6"
-              sx={{
-                color: WHITE,
-                textAlign: { xs: "center", md: "left" },
-                fontSize: { xs: "1rem", md: "1.25rem" }
-              }}
-            >
-              Address
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{
-                color: WHITE,
-                textAlign: { xs: "center", md: "left" },
-                fontSize: { xs: "0.9rem", md: "1rem" }
-              }}
-            >
-              Iceland Grand Tours
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{
-                color: WHITE,
-                textAlign: { xs: "center", md: "left" },
-                fontSize: { xs: "0.9rem", md: "1rem" }
-              }}
-            >
-              105 Bogahlid, Iceland
-            </Typography>
-            {/* <Typography
-              variant="body1"
-              sx={{
-                color: WHITE,
-                textAlign: { xs: "center", md: "left" },
-                fontSize: { xs: "0.9rem", md: "1rem" }
-              }}
-            >
-              KT : 600225-2430 change this or update this later
-            </Typography> */}
-          </Box>
-          <Box sx={{ m: { xs: 2, md: 3 } }}>
-            <Typography
-              variant="h6"
-              sx={{
-                color: WHITE,
-                textAlign: { xs: "center", md: "left" },
-                fontSize: { xs: "1rem", md: "1.25rem" }
-              }}
-            >
-              Contact
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{
-                color: WHITE,
-                textAlign: { xs: "center", md: "left" },
-                fontSize: { xs: "0.9rem", md: "1rem" }
-              }}
-            >
-              +354 770 3560
-            </Typography>
-            <Typography
-              variant="body1"
-              sx={{
-                color: WHITE,
-                textAlign: { xs: "center", md: "left" },
-                fontSize: { xs: "0.9rem", md: "1rem" }
-              }}
-            >
-              icelandgrand77@gmail.com
-            </Typography>
-            {/* <Typography
-              variant="body1"
-              sx={{
-                color: WHITE,
-                textAlign: { xs: "center", md: "left" },
-                fontSize: { xs: "0.9rem", md: "1rem" }
-              }}
-            >
-              Legal Notice | Privacy Policy
-            </Typography> */}
-          </Box>
-        </Box>
-        <Box sx={{ flex: 1, textAlign: "center" }}>
-          <Stack
-            direction="row"
-            spacing={2}
-            sx={{
-              justifyContent: "center",
-              mb: 2
-            }}
-          >
-            <Tooltip title="Facebook">
-              <IconButton
-                component="a"
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener"
-                sx={{ color: "#3b5998" }}
+        <Grid container spacing={{ xs: 1, md: 2 }}>
+          {/* Column 1: Company Info & Address */}
+          <Grid item xs={12} md={4}>
+            <Box sx={{ 
+              textAlign: { xs: "center", md: "left" },
+              px: { xs: 1, md: 0.5 },
+              py: { xs: 1, md: 1 }
+            }}>
+              <Typography
+                variant="h6"
+                sx={{
+                  color: WHITE,
+                  fontSize: { xs: "1rem", md: "1.1rem" },
+                  mb: 1,
+                  fontWeight: "bold"
+                }}
               >
-                <FacebookIcon />
-              </IconButton>
-            </Tooltip>
+                Iceland Grand Tours
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{
+                  color: WHITE,
+                  fontSize: { xs: "0.85rem", md: "0.9rem" },
+                  mb: 0.5,
+                  opacity: 0.9,
+                  lineHeight: 1.4
+                }}
+              >
+                105 Bogahlid, Iceland
+              </Typography>
+              <Typography
+                variant="body2"
+                sx={{
+                  color: WHITE,
+                  fontSize: { xs: "0.75rem", md: "0.8rem" },
+                  opacity: 0.8,
+                  lineHeight: 1.3
+                }}
+              >
+                Your trusted partner for Iceland adventures
+              </Typography>
+            </Box>
+          </Grid>
 
-            <Tooltip title="Twitter">
-              <IconButton
-                component="a"
-                href="https://www.twitter.com"
-                target="_blank"
-                rel="noopener"
-                sx={{ color: "#1DA1F2" }}
+          {/* Column 2: Contact Information */}
+          <Grid item xs={12} md={4}>
+            <Box sx={{ 
+              textAlign: { xs: "center", md: "left" },
+              px: { xs: 1, md: 0.5 },
+              py: { xs: 1, md: 1 }
+            }}>
+              <Typography
+                variant="h6"
+                sx={{
+                  color: WHITE,
+                  fontSize: { xs: "1rem", md: "1.1rem" },
+                  mb: 1,
+                  fontWeight: "bold"
+                }}
               >
-                <TwitterIcon />
-              </IconButton>
-            </Tooltip>
+                Contact Us
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{
+                  color: WHITE,
+                  fontSize: { xs: "0.85rem", md: "0.9rem" },
+                  mb: 0.5,
+                  opacity: 0.9,
+                  lineHeight: 1.4
+                }}
+              >
+                +354 770 3560
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{
+                  color: WHITE,
+                  fontSize: { xs: "0.85rem", md: "0.9rem" },
+                  mb: 1,
+                  opacity: 0.9,
+                  lineHeight: 1.4
+                }}
+              >
+                icelandgrand77@gmail.com
+              </Typography>
+              <Typography
+                variant="body2"
+                sx={{
+                  color: WHITE,
+                  fontSize: { xs: "0.75rem", md: "0.8rem" },
+                  opacity: 0.8,
+                  lineHeight: 1.3
+                }}
+              >
+                Available 24/7 for your convenience
+              </Typography>
+            </Box>
+          </Grid>
 
-            <Tooltip title="Instagram">
-              <IconButton
-                component="a"
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener"
-                sx={{ color: "#E1306C" }}
+          {/* Column 3: Social Media & Copyright */}
+          <Grid item xs={12} md={4}>
+            <Box sx={{ 
+              textAlign: { xs: "center", md: "right" },
+              px: { xs: 1, md: 0.5 },
+              py: { xs: 1, md: 1 }
+            }}>
+              <Typography
+                variant="h6"
+                sx={{
+                  color: WHITE,
+                  fontSize: { xs: "1rem", md: "1.1rem" },
+                  mb: 1,
+                  fontWeight: "bold"
+                }}
               >
-                <InstagramIcon />
-              </IconButton>
-            </Tooltip>
-          </Stack>
-          <Typography
-            variant="h6"
-            sx={{
-              color: WHITE,
-              fontSize: { xs: "0.9rem", md: "1rem" }
-            }}
-          >
-            Iceland Grand Tours © GGN2025
-          </Typography>
-        </Box>
+                Follow Us
+              </Typography>
+              <Stack
+                direction="row"
+                spacing={1.5}
+                sx={{
+                  justifyContent: { xs: "center", md: "flex-end" },
+                  mb: 1
+                }}
+              >
+                <Tooltip title="Facebook">
+                  <IconButton
+                    component="a"
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener"
+                    sx={{ 
+                      color: "#3b5998",
+                      fontSize: "1.2rem",
+                      "&:hover": {
+                        backgroundColor: "rgba(59, 89, 152, 0.1)",
+                        transform: "scale(1.1)"
+                      },
+                      transition: "all 0.3s ease"
+                    }}
+                  >
+                    <FacebookIcon />
+                  </IconButton>
+                </Tooltip>
+
+                <Tooltip title="Twitter">
+                  <IconButton
+                    component="a"
+                    href="https://www.twitter.com"
+                    target="_blank"
+                    rel="noopener"
+                    sx={{ 
+                      color: "#1DA1F2",
+                      fontSize: "1.2rem",
+                      "&:hover": {
+                        backgroundColor: "rgba(29, 161, 242, 0.1)",
+                        transform: "scale(1.1)"
+                      },
+                      transition: "all 0.3s ease"
+                    }}
+                  >
+                    <TwitterIcon />
+                  </IconButton>
+                </Tooltip>
+
+                <Tooltip title="Instagram">
+                  <IconButton
+                    component="a"
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener"
+                    sx={{ 
+                      color: "#E1306C",
+                      fontSize: "1.2rem",
+                      "&:hover": {
+                        backgroundColor: "rgba(225, 48, 108, 0.1)",
+                        transform: "scale(1.1)"
+                      },
+                      transition: "all 0.3s ease"
+                    }}
+                  >
+                    <InstagramIcon />
+                  </IconButton>
+                </Tooltip>
+              </Stack>
+              <Typography
+                variant="body2"
+                sx={{
+                  color: WHITE,
+                  fontSize: { xs: "0.75rem", md: "0.8rem" },
+                  opacity: 0.8,
+                  lineHeight: 1.3
+                }}
+              >
+                Iceland Grand Tours © GGN2025
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
       </Box>
     </Box>
   );

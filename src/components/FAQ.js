@@ -38,7 +38,7 @@ function FAQComponent() {
                 fontSize: { xs: "1rem", md: "1.25rem" }
               }}
             >
-              How can I book your private chauffeur service?
+              How can I book your Travel Like a Local – Private Driver Experience?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -50,7 +50,7 @@ function FAQComponent() {
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
             >
-              • Booking is simple: contact us on WhatsApp or send your travel plans by email to arrange your private chauffeur service.
+              • Booking is simple: contact us on WhatsApp or send your travel plans by email to arrange your Travel Like a Local – Private Driver Experience.
             </Typography>
             <Typography
               variant="body1"
@@ -106,7 +106,7 @@ function FAQComponent() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>For your comfort and convenience, Iceland Grand Tours offers the following premium services :</Typography>
-            <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Expert Private Chauffeurs</Typography>
+            <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Expert Private Driver Experience</Typography>
             <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Licensed Tour Guides</Typography>
             <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Well-maintained luxury and standard vehicles for your comfort.</Typography>
           </AccordionDetails>

@@ -31,7 +31,7 @@ function ContactUsComponent() {
   };
 
   return (
-    <Box sx={{ p: { xs: 2, md: 4 }, backgroundColor: PRIMARY }}>
+    <Box sx={{ p: { xs: 2, md: 4 }, backgroundColor: "#2c3e50" }}>
       <Typography
         variant="h4"
         sx={{

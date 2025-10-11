@@ -47,7 +47,7 @@ const CarouselComponent = () => {
   const carouselItems = [
     {
       title: 'Iceland Grand Tours',
-      description: "Private chauffeur. Local expertise. Breathtaking landscapes. Whether you're traveling for business or bonding as a family, our tailored Iceland tours deliver seamless comfort and once-in-a-lifetime moments — all curated just for you.",
+      description: "Travel Like a Local – Private Driver Experience. Local expertise. Breathtaking landscapes. Whether you're traveling for business or bonding as a family, our tailored Iceland tours deliver seamless comfort and once-in-a-lifetime moments — all curated just for you.",
       backgorundImage: CarouselImage1,
       button1: 'Book Now',
       button2: 'Find Out More'

@@ -229,7 +229,7 @@ function ChauffeurServices() {
           mb: 3,
         }}
       >
-        PRIVATE CHAUFFEUR SERVICES
+        Travel Like a Local – Private Driver Experience
       </Typography>
 
       {servicesData.map((row, rowIndex) => (

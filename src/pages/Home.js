@@ -62,7 +62,7 @@ function Home() {
             }}
           >
             {/* Travel Iceland effortlessly. With Iceland Grand Tours as your 24/7 private chauffeur and tour partner, every moment from arrival to departure is smooth and worry-free. */}
-            Embark on a journey where wild landscapes meet seamless service. With Iceland Grand Tours as your 24/7 private chauffeur and custom travel partner, every glacier hike, volcano trail, and northern lights chase is delivered with precision, comfort, and local expertise — so you explore boldly, and arrive professionally.
+            Embark on a journey where wild landscapes meet seamless service. With Iceland Grand Tours as your 24/7 Travel Like a Local – Private Driver Experience and custom travel partner, every glacier hike, volcano trail, and northern lights chase is delivered with precision, comfort, and local expertise — so you explore boldly, and arrive professionally.
           </Typography>
           <Box
             sx={{
