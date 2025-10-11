@@ -21,16 +21,22 @@ function FooterComponent() {
           paddingRight: { xs: "5%", md: "5%" },
           paddingTop: { xs: "0.5%", md: "0.8%" },
           paddingBottom: { xs: "0.5%", md: "0.8%" },
-          mx: { xs: 0, md: "auto" }
+          mx: { xs: 0, md: "auto" },
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center"
         }}
       >
-        <Grid container spacing={{ xs: 1, md: 2 }}>
+        <Grid container spacing={{ xs: 1, md: 2 }} justifyContent="center" alignItems="center">
           {/* Column 1: Company Info & Address */}
           <Grid item xs={12} md={4}>
             <Box sx={{ 
               textAlign: { xs: "center", md: "left" },
-              px: { xs: 1, md: 0.5 },
-              py: { xs: 1, md: 1 }
+              px: { xs: 2, md: 0.5 },
+              py: { xs: 1, md: 1 },
+              display: "flex",
+              flexDirection: "column",
+              alignItems: { xs: "center", md: "flex-start" }
             }}>
               <Typography
                 variant="h6"
@@ -73,8 +79,11 @@ function FooterComponent() {
           <Grid item xs={12} md={4}>
             <Box sx={{ 
               textAlign: { xs: "center", md: "left" },
-              px: { xs: 1, md: 0.5 },
-              py: { xs: 1, md: 1 }
+              px: { xs: 2, md: 0.5 },
+              py: { xs: 1, md: 1 },
+              display: "flex",
+              flexDirection: "column",
+              alignItems: { xs: "center", md: "flex-start" }
             }}>
               <Typography
                 variant="h6"
@@ -129,8 +138,11 @@ function FooterComponent() {
           <Grid item xs={12} md={4}>
             <Box sx={{ 
               textAlign: { xs: "center", md: "right" },
-              px: { xs: 1, md: 0.5 },
-              py: { xs: 1, md: 1 }
+              px: { xs: 2, md: 0.5 },
+              py: { xs: 1, md: 1 },
+              display: "flex",
+              flexDirection: "column",
+              alignItems: { xs: "center", md: "flex-end" }
             }}>
               <Typography
                 variant="h6"
