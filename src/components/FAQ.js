@@ -51,6 +51,7 @@ function FAQComponent() {
               }}
             >
               • Booking is simple: contact us on WhatsApp or send your travel plans by email to arrange your Travel Like a Local – Private Driver Experience.
+            
             </Typography>
             <Typography
               variant="body1"
@@ -60,6 +61,7 @@ function FAQComponent() {
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
             >
+              • To confirm your reservation and lock in your preferred travel date, a 10% deposit is required. You can conveniently complete this via a secure payment link—quick and easy!
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -74,6 +76,7 @@ function FAQComponent() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• All major debit and credit cards are accepted.</Typography>
+            <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• You may choose to pre-pay through a secure payment link, conveniently sent to you via email, SMS, or WhatsApp-forwarded message.</Typography>
             <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Payment can be completed upon drop-off or once the journey is finished, according to your preference.</Typography>
           </AccordionDetails>
         </Accordion>
@@ -106,7 +109,7 @@ function FAQComponent() {
             <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>For your comfort and convenience, Iceland Grand Tours offers the following premium services :</Typography>
             <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Expert Private Driver Experience</Typography>
             <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Experienced Tour Guides</Typography>
-            <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Well-maintained luxury and standard vehicles for your comfort.</Typography>
+            <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Well-maintained vehicle for your comfort.</Typography>
           </AccordionDetails>
         </Accordion>
       </Box>
