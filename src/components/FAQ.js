@@ -60,7 +60,6 @@ function FAQComponent() {
                 fontSize: { xs: "0.9rem", md: "1rem" }
               }}
             >
-              • Confirm your reservation with a 10% deposit, conveniently settled through a secure online payment link.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -75,8 +74,7 @@ function FAQComponent() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• All major debit and credit cards are accepted.</Typography>
-            <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• You can pre-pay easily through a secure payment link, delivered to you via email, SMS, or WhatsApp.</Typography>
-            <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Payment can also be completed upon drop-off or once the journey is finished, according to your preference.</Typography>
+            <Typography variant="body1" sx={{ textAlign: "left", m: 1 }}>• Payment can be completed upon drop-off or once the journey is finished, according to your preference.</Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion>
