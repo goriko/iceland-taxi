@@ -112,7 +112,6 @@ export const servicesData = [
                 price1: "🚗 Car (1–4 persons): €450 per car",
                 price2: "🚗 Car (5–8 persons): €550 per car",
                 includes: "Includes: Private vehicle, local driver, flexible pick-up/drop-off, and Aurora forecast monitoring.",
-                note: "📌 Note: Tour operates only during Aurora season (Sep–Apr). 🕓 Return option includes up to 1 hour of Aurora viewing (2.5 hours total).",
             },
             {
                 image: keflavikAirportImage1,
@@ -135,7 +134,6 @@ export const servicesData = [
                 price1: "🚗 Car (1–4 persons): €330 per car (Roundtrip)",
                 price2: "🚗 Car (5–8 persons): €410 per car (Roundtrip)",
                 includes: "Includes: Private vehicle, local driver, and flexible pick-up/drop-off.",
-                note: "📌 Note: Must have pre-booking for entrance.",
                 showLabels: true,
             },
             {
@@ -148,7 +146,6 @@ export const servicesData = [
                 price1: "🚗 Car (1–4 persons): €390 per car (Roundtrip)",
                 price2: "🚗 Car (5–8 persons): €520 per car (Roundtrip)",
                 includes: "Includes: Private vehicle, local driver, and flexible pick-up/drop-off.",
-                note: "📌 Note: Must have pre-booking for entrance.",
                 showLabels: true,
             },
             {
@@ -161,7 +158,6 @@ export const servicesData = [
                 price1: "🚗 Car (1–4 persons): €330 per car (Roundtrip)",
                 price2: "🚗 Car (5–8 persons): €410 per car (Roundtrip)",
                 includes: "Includes: Private vehicle, local driver, and flexible pick-up/drop-off.",
-                note: "📌 Note: Must have pre-booking for entrance.",
                 showLabels: true,
             },
         ],

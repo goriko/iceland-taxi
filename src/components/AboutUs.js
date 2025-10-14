@@ -48,7 +48,7 @@ const homeIcon = new L.Icon({
 
 function AboutUsComponent() {
 
-  const position = [64.0049, -22.5624];
+  const position = [64.132822, -21.905483];
   const airportPosition = [63.9850, -22.6056]; // Keflavík Airport coordinates
   
   // Key destinations from the services
