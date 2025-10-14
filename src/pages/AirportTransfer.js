@@ -16,6 +16,7 @@ import { PRIMARY, } from "../constants/UI";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import emailjs from "emailjs-com";
+import CountryCodeSelector from "../components/CountryCodeSelector";
 
 const AirportTransfer = () => {
   const location = useLocation();
@@ -147,7 +148,7 @@ const AirportTransfer = () => {
           <input type="hidden" name="serviceType" value="Airport Transfer" />
           <TextField name="name" label="Full Name" variant="outlined" required fullWidth />
           <TextField name="email" label="Email Address" type="email" variant="outlined" required fullWidth />
-          <TextField name="phone" label="Phone Number" type="tel" variant="outlined" required fullWidth />
+          <CountryCodeSelector name="phone" label="Phone Number" variant="outlined" required fullWidth />
           <TextField name="date" label="Date of Arrival/Departure" type="date" InputLabelProps={{ shrink: true }} required fullWidth />
           <TextField name="time" label="Time of Arrival/Departure" type="time" InputLabelProps={{ shrink: true }} required fullWidth />
           <TextField name="pickup" label="Pickup Location" variant="outlined" required fullWidth />

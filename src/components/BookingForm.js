@@ -3,6 +3,7 @@ import { Box, TextField, Checkbox, FormControlLabel, Button, Snackbar, Alert } f
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import { PRIMARY } from "../constants/UI";
+import CountryCodeSelector from "./CountryCodeSelector";
 
 export default function BookingForm({ service }) {
   const [open, setOpen] = useState(false);
@@ -33,7 +34,7 @@ export default function BookingForm({ service }) {
         {service && <input type="hidden" name="serviceType" value={service.title} />}
         <TextField name="name" label="Full Name" required fullWidth />
         <TextField name="email" label="Email Address" type="email" required fullWidth />
-        <TextField name="phone" label="Phone Number" type="tel" required fullWidth />
+        <CountryCodeSelector name="phone" label="Phone Number" required fullWidth />
         <TextField name="date" label="Date of Arrival/Departure" type="date" InputLabelProps={{ shrink: true }} required fullWidth />
         <TextField name="time" label="Time of Arrival/Departure" type="time" InputLabelProps={{ shrink: true }} required fullWidth />
         <TextField name="pickup" label="Pickup Location" required fullWidth />

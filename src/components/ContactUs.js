@@ -6,6 +6,7 @@ import {
 } from "@mui/material";
 import { PRIMARY, WHITE } from "../constants/UI";
 import emailjs from "emailjs-com";
+import CountryCodeSelector from "./CountryCodeSelector";
 
 function ContactUsComponent() {
   const handleSubmit = (e) => {
@@ -86,25 +87,15 @@ function ContactUsComponent() {
             },
           }}
         />
-        <TextField
+        <CountryCodeSelector
           name="phone"
           label="Phone Number"
           variant="outlined"
           fullWidth
           required
-          InputProps={{
-            sx: {
-              color: "#fff",           // Input text
-            },
-          }}
-          InputLabelProps={{
-            sx: {
-              color: "#ccc",           // Label color
-              "&.Mui-focused": {
-                color: "#fff",         // Label color when focused
-              },
-            },
-          }}
+          inputTextColor="#fff"
+          labelColor="#ccc"
+          labelFocusedColor="#fff"
           sx={{
             mt: 2,
             mb: 2,
